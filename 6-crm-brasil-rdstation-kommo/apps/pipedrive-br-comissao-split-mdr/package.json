@@ -1,0 +1,8 @@
+{
+  "name": "@brasil-b2b/pipedrive-br-comissao-split-mdr",
+  "version": "1.0.0",
+  "description": "Calcula comissão líquida por vendedor descontando taxa de antecipação de cartão e boleto.",
+  "main": "index.js",
+  "ecosystem": "Pipedrive Marketplace",
+  "priceBRL": "R$ 54,90/mês"
+}

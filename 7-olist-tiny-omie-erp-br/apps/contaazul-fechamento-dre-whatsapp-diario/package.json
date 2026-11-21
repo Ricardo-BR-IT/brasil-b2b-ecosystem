@@ -1,0 +1,8 @@
+{
+  "name": "@brasil-b2b/contaazul-fechamento-dre-whatsapp-diario",
+  "version": "1.0.0",
+  "description": "Envia às 19h no WhatsApp do sócio o saldo bancário, vendas do dia e contas que vencem amanhã.",
+  "main": "index.js",
+  "ecosystem": "Conta Azul App Store",
+  "priceBRL": "R$ 49,90/mês"
+}

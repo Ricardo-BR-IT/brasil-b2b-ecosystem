@@ -1,0 +1,8 @@
+{
+  "name": "@brasil-b2b/rdstation-integrador-asaas-cobranca-pix",
+  "version": "1.0.0",
+  "description": "Cria cliente e cobrança recorrente ou avulsa no Asaas automaticamente quando a venda é ganha.",
+  "main": "index.js",
+  "ecosystem": "RD Station / Asaas",
+  "priceBRL": "R$ 64,90/mês"
+}

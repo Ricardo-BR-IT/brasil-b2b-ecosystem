@@ -1,0 +1,8 @@
+{
+  "name": "@brasil-b2b/kommo-orcamento-pdf-pix-brcode",
+  "version": "1.0.0",
+  "description": "Gera proposta comercial em PDF com logo e QR Code PIX direto da etapa do funil no Kommo.",
+  "main": "index.js",
+  "ecosystem": "Kommo Marketplace",
+  "priceBRL": "R$ 59,90/mês"
+}

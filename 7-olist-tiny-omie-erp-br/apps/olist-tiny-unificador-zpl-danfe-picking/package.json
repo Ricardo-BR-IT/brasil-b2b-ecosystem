@@ -1,0 +1,8 @@
+{
+  "name": "@brasil-b2b/olist-tiny-unificador-zpl-danfe-picking",
+  "version": "1.0.0",
+  "description": "Agiliza expedição imprimindo etiqueta térmica, DANFE simplificada e separação em 1 clique.",
+  "main": "index.js",
+  "ecosystem": "Olist / Tiny ERP",
+  "priceBRL": "R$ 49,90/mês"
+}

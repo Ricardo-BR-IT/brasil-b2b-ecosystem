@@ -1,0 +1,8 @@
+{
+  "name": "@brasil-b2b/pipedrive-br-scorecard-spin-bant-ptbr",
+  "version": "1.0.0",
+  "description": "Obriga qualificação mínima antes de avançar etapa, aumentando taxa de fechamento B2B.",
+  "main": "index.js",
+  "ecosystem": "Pipedrive / RD Station",
+  "priceBRL": "R$ 39,90/mês"
+}

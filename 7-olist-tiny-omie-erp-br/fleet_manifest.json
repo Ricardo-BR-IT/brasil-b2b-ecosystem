@@ -1,0 +1,141 @@
+{
+  "factory": "7-olist-tiny-omie-erp-br",
+  "total_apps": 15,
+  "apps": [
+    {
+      "id": "01",
+      "slug": "olist-tiny-conciliador-taxas-marketplaces",
+      "name": "Olist & Tiny ERP Conciliador de Repasses Mercado Livre, Shopee & Magalu",
+      "ecosystem": "Olist / Tiny ERP",
+      "price_brl": "R$ 59,90/mês",
+      "description": "Audita centavo por centavo o repasse líquido vs pedido faturado no Tiny/Olist.",
+      "zip": "dist/olist-tiny-conciliador-taxas-marketplaces.zip"
+    },
+    {
+      "id": "02",
+      "slug": "olist-tiny-unificador-zpl-danfe-picking",
+      "name": "Olist & Tiny Unificador de Etiqueta ZPL 100x150mm + DANFE + Picking List",
+      "ecosystem": "Olist / Tiny ERP",
+      "price_brl": "R$ 49,90/mês",
+      "description": "Agiliza expedição imprimindo etiqueta térmica, DANFE simplificada e separação em 1 clique.",
+      "zip": "dist/olist-tiny-unificador-zpl-danfe-picking.zip"
+    },
+    {
+      "id": "03",
+      "slug": "olist-tiny-auditor-ncm-cfop-cest-sefaz",
+      "name": "Olist & Tiny Validador Preventivo de NCM, CEST, CFOP & Rejeições Sefaz",
+      "ecosystem": "Olist / Tiny ERP",
+      "price_brl": "R$ 54,90/mês",
+      "description": "Varre o cadastro de produtos antes de faturar em lote na Black Friday para zerar erros Sefaz.",
+      "zip": "dist/olist-tiny-auditor-ncm-cfop-cest-sefaz.zip"
+    },
+    {
+      "id": "04",
+      "slug": "olist-tiny-calculadora-margem-anuncios",
+      "name": "Olist & Tiny Calculadora de Margem Líquida por SKU e Canal de Venda",
+      "ecosystem": "Olist / Tiny ERP",
+      "price_brl": "R$ 49,90/mês",
+      "description": "Mostra quais SKUs estão dando prejuízo após frete grátis, comissão e imposto do Simples Nacional.",
+      "zip": "dist/olist-tiny-calculadora-margem-anuncios.zip"
+    },
+    {
+      "id": "05",
+      "slug": "olist-tiny-alerta-ruptura-curva-abc",
+      "name": "Olist & Tiny Radar de Ruptura de Estoque, Giro Real & Sugestão de Compra",
+      "ecosystem": "Olist / Tiny ERP",
+      "price_brl": "R$ 59,90/mês",
+      "description": "Calcula dias de cobertura por SKU e gera ordem de compra automática para o fornecedor.",
+      "zip": "dist/olist-tiny-alerta-ruptura-curva-abc.zip"
+    },
+    {
+      "id": "06",
+      "slug": "omie-regua-cobranca-pix-boleto-whatsapp",
+      "name": "Omie.Store Régua de Cobrança Amigável PIX/Boleto no WhatsApp (Art. 42 CDC)",
+      "ecosystem": "Omie.Store",
+      "price_brl": "R$ 69,90/mês",
+      "description": "Lê contas a receber no Omie e envia lembretes D-2, Dia D e D+3 com PIX Copia-e-Cola.",
+      "zip": "dist/omie-regua-cobranca-pix-boleto-whatsapp.zip"
+    },
+    {
+      "id": "07",
+      "slug": "omie-conciliador-extrato-ofx-pix-bancario",
+      "name": "Omie.Store Conciliador Automático de Extratos OFX, PIX & Taxas Maquininha",
+      "ecosystem": "Omie.Store",
+      "price_brl": "R$ 79,90/mês",
+      "description": "Cruza vendas em cartão/PIX com o extrato bancário para identificar taxas cobradas a maior.",
+      "zip": "dist/omie-conciliador-extrato-ofx-pix-bancario.zip"
+    },
+    {
+      "id": "08",
+      "slug": "omie-exportador-contabil-dominio-alterdata",
+      "name": "Omie.Store Empacotador Mensal XML NF-e/NFS-e para Domínio, Alterdata & Fortes",
+      "ecosystem": "Omie.Store",
+      "price_brl": "R$ 69,90/mês",
+      "description": "Organiza todos os XMLs autorizados, cancelados e inutilizados do mês em 1 clique para o contador.",
+      "zip": "dist/omie-exportador-contabil-dominio-alterdata.zip"
+    },
+    {
+      "id": "09",
+      "slug": "omie-simulador-reforma-tributaria-ibs-cbs",
+      "name": "Omie.Store Simulador de Impacto da Reforma Tributária (IBS + CBS) por NCM",
+      "ecosystem": "Omie.Store",
+      "price_brl": "R$ 89,90/mês",
+      "description": "Simula a carga tributária futura da empresa usando os produtos e faturamento reais do Omie.",
+      "zip": "dist/omie-simulador-reforma-tributaria-ibs-cbs.zip"
+    },
+    {
+      "id": "10",
+      "slug": "omie-portal-aprovacao-compras-whatsapp",
+      "name": "Omie.Store Aprovação de Pedidos de Compra & Contas a Pagar via WhatsApp",
+      "ecosystem": "Omie.Store",
+      "price_brl": "R$ 64,90/mês",
+      "description": "O diretor recebe o resumo da despesa no WhatsApp e aprova ou recusa sem abrir o ERP.",
+      "zip": "dist/omie-portal-aprovacao-compras-whatsapp.zip"
+    },
+    {
+      "id": "11",
+      "slug": "contaazul-fechamento-dre-whatsapp-diario",
+      "name": "Conta Azul Resumo Diário de Caixa, Recebíveis e Mini-DRE no WhatsApp",
+      "ecosystem": "Conta Azul App Store",
+      "price_brl": "R$ 49,90/mês",
+      "description": "Envia às 19h no WhatsApp do sócio o saldo bancário, vendas do dia e contas que vencem amanhã.",
+      "zip": "dist/contaazul-fechamento-dre-whatsapp-diario.zip"
+    },
+    {
+      "id": "12",
+      "slug": "contaazul-emissor-cobranca-pix-recorrente",
+      "name": "Conta Azul Automação de Cobrança PIX Recorrente & Baixa Automática",
+      "ecosystem": "Conta Azul App Store",
+      "price_brl": "R$ 59,90/mês",
+      "description": "Gera e envia cobranças mensais via PIX/WhatsApp e concilia o recebimento no Conta Azul.",
+      "zip": "dist/contaazul-emissor-cobranca-pix-recorrente.zip"
+    },
+    {
+      "id": "13",
+      "slug": "contaazul-split-comissao-vendedores-pro",
+      "name": "Conta Azul Apurador de Comissões por Recebimento (Regime de Caixa)",
+      "ecosystem": "Conta Azul App Store",
+      "price_brl": "R$ 54,90/mês",
+      "description": "Calcula a comissão somente sobre faturas efetivamente pagas, eliminando comissão sobre inadimplência.",
+      "zip": "dist/contaazul-split-comissao-vendedores-pro.zip"
+    },
+    {
+      "id": "14",
+      "slug": "olist-tiny-posvenda-rastreio-whatsapp-nps",
+      "name": "Olist & Tiny Automação de Rastreio Correios/Transportadora + Pesquisa NPS",
+      "ecosystem": "Olist / Tiny ERP",
+      "price_brl": "R$ 49,90/mês",
+      "description": "Notifica o comprador no WhatsApp a cada etapa da entrega e pede avaliação positiva no marketplace.",
+      "zip": "dist/olist-tiny-posvenda-rastreio-whatsapp-nps.zip"
+    },
+    {
+      "id": "15",
+      "slug": "olist-omie-auditor-difal-icms-st-uf",
+      "name": "Olist, Tiny & Omie Auditor de DIFAL e ICMS-ST em Vendas Interestaduais",
+      "ecosystem": "Olist / Tiny / Omie",
+      "price_brl": "R$ 69,90/mês",
+      "description": "Calcula e confere automaticamente guias GNRE/DIFAL por UF de destino antes do despacho.",
+      "zip": "dist/olist-omie-auditor-difal-icms-st-uf.zip"
+    }
+  ]
+}

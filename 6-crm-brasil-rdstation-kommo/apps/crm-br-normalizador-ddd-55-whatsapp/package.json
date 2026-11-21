@@ -1,0 +1,8 @@
+{
+  "name": "@brasil-b2b/crm-br-normalizador-ddd-55-whatsapp",
+  "version": "1.0.0",
+  "description": "Corrige telefones sem DDD ou sem 9º dígito para evitar duplicidade de leads e falha em disparos WhatsApp.",
+  "main": "index.js",
+  "ecosystem": "RD Station / Pipedrive / Kommo",
+  "priceBRL": "R$ 39,90/mês"
+}

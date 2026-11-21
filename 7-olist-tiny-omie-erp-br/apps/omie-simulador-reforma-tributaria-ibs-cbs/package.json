@@ -1,0 +1,8 @@
+{
+  "name": "@brasil-b2b/omie-simulador-reforma-tributaria-ibs-cbs",
+  "version": "1.0.0",
+  "description": "Simula a carga tributária futura da empresa usando os produtos e faturamento reais do Omie.",
+  "main": "index.js",
+  "ecosystem": "Omie.Store",
+  "priceBRL": "R$ 89,90/mês"
+}

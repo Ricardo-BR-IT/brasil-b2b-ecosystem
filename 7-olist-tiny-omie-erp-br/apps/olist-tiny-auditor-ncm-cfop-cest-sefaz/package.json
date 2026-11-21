@@ -1,0 +1,8 @@
+{
+  "name": "@brasil-b2b/olist-tiny-auditor-ncm-cfop-cest-sefaz",
+  "version": "1.0.0",
+  "description": "Varre o cadastro de produtos antes de faturar em lote na Black Friday para zerar erros Sefaz.",
+  "main": "index.js",
+  "ecosystem": "Olist / Tiny ERP",
+  "priceBRL": "R$ 54,90/mês"
+}

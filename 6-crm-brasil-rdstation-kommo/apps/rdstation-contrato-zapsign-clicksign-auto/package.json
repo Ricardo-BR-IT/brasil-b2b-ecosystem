@@ -1,0 +1,8 @@
+{
+  "name": "@brasil-b2b/rdstation-contrato-zapsign-clicksign-auto",
+  "version": "1.0.0",
+  "description": "Ao mover o negócio para Ganho, gera o contrato de prestação de serviços e dispara para assinatura.",
+  "main": "index.js",
+  "ecosystem": "RD Station / Pipedrive",
+  "priceBRL": "R$ 69,90/mês"
+}

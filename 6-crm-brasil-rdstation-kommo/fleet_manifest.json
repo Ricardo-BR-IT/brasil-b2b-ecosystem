@@ -1,0 +1,141 @@
+{
+  "factory": "6-crm-brasil-rdstation-kommo",
+  "total_apps": 15,
+  "apps": [
+    {
+      "id": "01",
+      "slug": "rdstation-cnpj-enriquecedor-brasilapi",
+      "name": "RD Station CRM Enriquecedor CNPJ, QSA & CNAE (BrasilAPI)",
+      "ecosystem": "RD Station App Store",
+      "price_brl": "R$ 49,90/mês",
+      "description": "Preenche automaticamente Razão Social, Capital Social, Sócios e Porte ao digitar o CNPJ no negócio.",
+      "zip": "dist/rdstation-cnpj-enriquecedor-brasilapi.zip"
+    },
+    {
+      "id": "02",
+      "slug": "crm-br-normalizador-ddd-55-whatsapp",
+      "name": "Normalizador Universal Telefone +55 & 9º Dígito WhatsApp",
+      "ecosystem": "RD Station / Pipedrive / Kommo",
+      "price_brl": "R$ 39,90/mês",
+      "description": "Corrige telefones sem DDD ou sem 9º dígito para evitar duplicidade de leads e falha em disparos WhatsApp.",
+      "zip": "dist/crm-br-normalizador-ddd-55-whatsapp.zip"
+    },
+    {
+      "id": "03",
+      "slug": "kommo-orcamento-pdf-pix-brcode",
+      "name": "Kommo CRM Gerador de Proposta PDF Timbrada + PIX Copia-e-Cola",
+      "ecosystem": "Kommo Marketplace",
+      "price_brl": "R$ 59,90/mês",
+      "description": "Gera proposta comercial em PDF com logo e QR Code PIX direto da etapa do funil no Kommo.",
+      "zip": "dist/kommo-orcamento-pdf-pix-brcode.zip"
+    },
+    {
+      "id": "04",
+      "slug": "pipedrive-br-comissao-split-mdr",
+      "name": "Pipedrive Brasil Calculadora de Comissão, Metas & Desconto MDR",
+      "ecosystem": "Pipedrive Marketplace",
+      "price_brl": "R$ 54,90/mês",
+      "description": "Calcula comissão líquida por vendedor descontando taxa de antecipação de cartão e boleto.",
+      "zip": "dist/pipedrive-br-comissao-split-mdr.zip"
+    },
+    {
+      "id": "05",
+      "slug": "rdstation-speed-to-lead-sla-alerta",
+      "name": "RD Station & Kommo Alerta SLA Tempo de 1ª Resposta no WhatsApp",
+      "ecosystem": "RD Station / Kommo",
+      "price_brl": "R$ 49,90/mês",
+      "description": "Avisa o gestor no WhatsApp se um lead quente ficar mais de 5 minutos sem primeiro contato.",
+      "zip": "dist/rdstation-speed-to-lead-sla-alerta.zip"
+    },
+    {
+      "id": "06",
+      "slug": "bitrix24-br-validador-cpf-cnpj-cep",
+      "name": "Bitrix24 Brasil Validador CPF/CNPJ, Inscrição Estadual & ViaCEP",
+      "ecosystem": "Bitrix24 Market",
+      "price_brl": "R$ 44,90/mês",
+      "description": "Bloqueia cadastro de CPF/CNPJ inválido no CRM e preenche endereço completo pelo CEP.",
+      "zip": "dist/bitrix24-br-validador-cpf-cnpj-cep.zip"
+    },
+    {
+      "id": "07",
+      "slug": "crm-br-deduplicador-lead-telefone-cnpj",
+      "name": "Deduplicador Inteligente de Leads por CNPJ, E-mail e WhatsApp",
+      "ecosystem": "RD Station / Pipedrive / Kommo",
+      "price_brl": "R$ 49,90/mês",
+      "description": "Encontra e mescla leads duplicados com variações de 9º dígito e pontuação de CNPJ.",
+      "zip": "dist/crm-br-deduplicador-lead-telefone-cnpj.zip"
+    },
+    {
+      "id": "08",
+      "slug": "rdstation-contrato-zapsign-clicksign-auto",
+      "name": "Disparador Automático de Contrato PDF & Assinatura Digital no Ganho",
+      "ecosystem": "RD Station / Pipedrive",
+      "price_brl": "R$ 69,90/mês",
+      "description": "Ao mover o negócio para Ganho, gera o contrato de prestação de serviços e dispara para assinatura.",
+      "zip": "dist/rdstation-contrato-zapsign-clicksign-auto.zip"
+    },
+    {
+      "id": "09",
+      "slug": "kommo-recuperador-proposta-vencida-zap",
+      "name": "Cadência Anti-Ghosting: Follow-Up de Propostas sem Resposta (D+2, D+5, D+10)",
+      "ecosystem": "Kommo / RD Station",
+      "price_brl": "R$ 49,90/mês",
+      "description": "Reativa orçamentos parados no funil com mensagens consultivas e link de pagamento PIX.",
+      "zip": "dist/kommo-recuperador-proposta-vencida-zap.zip"
+    },
+    {
+      "id": "10",
+      "slug": "pipedrive-br-scorecard-spin-bant-ptbr",
+      "name": "Scorecard Interativo SPIN Selling & BANT em Português no Card do Negócio",
+      "ecosystem": "Pipedrive / RD Station",
+      "price_brl": "R$ 39,90/mês",
+      "description": "Obriga qualificação mínima antes de avançar etapa, aumentando taxa de fechamento B2B.",
+      "zip": "dist/pipedrive-br-scorecard-spin-bant-ptbr.zip"
+    },
+    {
+      "id": "11",
+      "slug": "rdstation-integrador-asaas-cobranca-pix",
+      "name": "Ponte RD Station CRM ↔ Asaas: Gera Boleto/PIX ao Fechar Negócio",
+      "ecosystem": "RD Station / Asaas",
+      "price_brl": "R$ 64,90/mês",
+      "description": "Cria cliente e cobrança recorrente ou avulsa no Asaas automaticamente quando a venda é ganha.",
+      "zip": "dist/rdstation-integrador-asaas-cobranca-pix.zip"
+    },
+    {
+      "id": "12",
+      "slug": "bitrix24-br-handoff-vendas-cs-onboarding",
+      "name": "Checklist de Passagem de Bastão (Vendas → Pós-Venda/CS) com Trava",
+      "ecosystem": "Bitrix24 / RD Station",
+      "price_brl": "R$ 44,90/mês",
+      "description": "Garante que todos os documentos, CNPJ e escopo estejam preenchidos antes da entrega ao CS.",
+      "zip": "dist/bitrix24-br-handoff-vendas-cs-onboarding.zip"
+    },
+    {
+      "id": "13",
+      "slug": "crm-br-auditor-utm-origem-meta-google",
+      "name": "Rastreador de Origem UTM (Meta Ads / Google Ads / WhatsApp) para ROI Real",
+      "ecosystem": "RD Station / Kommo / Pipedrive",
+      "price_brl": "R$ 54,90/mês",
+      "description": "Grava campanha, conjunto e anúncio em cada lead vindo do WhatsApp para provar o ROAS real.",
+      "zip": "dist/crm-br-auditor-utm-origem-meta-google.zip"
+    },
+    {
+      "id": "14",
+      "slug": "kommo-agendamento-sinal-pix-clinicas",
+      "name": "Agendador Kommo com Sinal PIX 30% Anti-Falta para Clínicas e Serviços",
+      "ecosystem": "Kommo Marketplace",
+      "price_brl": "R$ 59,90/mês",
+      "description": "Só confirma o horário na agenda após o envio do comprovante ou compensação do sinal PIX.",
+      "zip": "dist/kommo-agendamento-sinal-pix-clinicas.zip"
+    },
+    {
+      "id": "15",
+      "slug": "crm-br-radar-renovacao-churn-anual",
+      "name": "Radar de Renovação de Contratos Anuais & Alerta de Risco de Churn B2B",
+      "ecosystem": "RD Station / Pipedrive",
+      "price_brl": "R$ 59,90/mês",
+      "description": "Abre tarefa automática 60 dias antes do vencimento do contrato com índice de reajuste IPCA/IGP-M.",
+      "zip": "dist/crm-br-radar-renovacao-churn-anual.zip"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "name": "@brasil-b2b/kommo-recuperador-proposta-vencida-zap",
+  "version": "1.0.0",
+  "description": "Reativa orçamentos parados no funil com mensagens consultivas e link de pagamento PIX.",
+  "main": "index.js",
+  "ecosystem": "Kommo / RD Station",
+  "priceBRL": "R$ 49,90/mês"
+}

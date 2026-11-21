@@ -1,0 +1,8 @@
+{
+  "name": "@brasil-b2b/bitrix24-br-handoff-vendas-cs-onboarding",
+  "version": "1.0.0",
+  "description": "Garante que todos os documentos, CNPJ e escopo estejam preenchidos antes da entrega ao CS.",
+  "main": "index.js",
+  "ecosystem": "Bitrix24 / RD Station",
+  "priceBRL": "R$ 44,90/mês"
+}

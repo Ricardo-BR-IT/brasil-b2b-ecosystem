@@ -1,0 +1,8 @@
+{
+  "name": "@brasil-b2b/olist-tiny-posvenda-rastreio-whatsapp-nps",
+  "version": "1.0.0",
+  "description": "Notifica o comprador no WhatsApp a cada etapa da entrega e pede avaliação positiva no marketplace.",
+  "main": "index.js",
+  "ecosystem": "Olist / Tiny ERP",
+  "priceBRL": "R$ 49,90/mês"
+}

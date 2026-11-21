@@ -1,0 +1,8 @@
+{
+  "name": "@brasil-b2b/omie-regua-cobranca-pix-boleto-whatsapp",
+  "version": "1.0.0",
+  "description": "Lê contas a receber no Omie e envia lembretes D-2, Dia D e D+3 com PIX Copia-e-Cola.",
+  "main": "index.js",
+  "ecosystem": "Omie.Store",
+  "priceBRL": "R$ 69,90/mês"
+}

@@ -1,0 +1,8 @@
+{
+  "name": "@brasil-b2b/omie-conciliador-extrato-ofx-pix-bancario",
+  "version": "1.0.0",
+  "description": "Cruza vendas em cartão/PIX com o extrato bancário para identificar taxas cobradas a maior.",
+  "main": "index.js",
+  "ecosystem": "Omie.Store",
+  "priceBRL": "R$ 79,90/mês"
+}

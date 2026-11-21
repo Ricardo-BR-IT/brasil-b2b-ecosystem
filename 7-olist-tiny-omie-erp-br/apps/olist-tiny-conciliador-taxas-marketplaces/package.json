@@ -1,0 +1,8 @@
+{
+  "name": "@brasil-b2b/olist-tiny-conciliador-taxas-marketplaces",
+  "version": "1.0.0",
+  "description": "Audita centavo por centavo o repasse líquido vs pedido faturado no Tiny/Olist.",
+  "main": "index.js",
+  "ecosystem": "Olist / Tiny ERP",
+  "priceBRL": "R$ 59,90/mês"
+}

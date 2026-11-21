@@ -1,0 +1,8 @@
+{
+  "name": "@brasil-b2b/contaazul-emissor-cobranca-pix-recorrente",
+  "version": "1.0.0",
+  "description": "Gera e envia cobranças mensais via PIX/WhatsApp e concilia o recebimento no Conta Azul.",
+  "main": "index.js",
+  "ecosystem": "Conta Azul App Store",
+  "priceBRL": "R$ 59,90/mês"
+}

@@ -1,0 +1,8 @@
+{
+  "name": "@brasil-b2b/crm-br-auditor-utm-origem-meta-google",
+  "version": "1.0.0",
+  "description": "Grava campanha, conjunto e anúncio em cada lead vindo do WhatsApp para provar o ROAS real.",
+  "main": "index.js",
+  "ecosystem": "RD Station / Kommo / Pipedrive",
+  "priceBRL": "R$ 54,90/mês"
+}

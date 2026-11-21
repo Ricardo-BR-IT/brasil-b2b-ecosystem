@@ -1,0 +1,8 @@
+{
+  "name": "@brasil-b2b/contaazul-split-comissao-vendedores-pro",
+  "version": "1.0.0",
+  "description": "Calcula a comissão somente sobre faturas efetivamente pagas, eliminando comissão sobre inadimplência.",
+  "main": "index.js",
+  "ecosystem": "Conta Azul App Store",
+  "priceBRL": "R$ 54,90/mês"
+}

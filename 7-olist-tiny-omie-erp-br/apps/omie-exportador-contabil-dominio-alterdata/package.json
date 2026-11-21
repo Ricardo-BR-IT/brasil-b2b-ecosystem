@@ -1,0 +1,8 @@
+{
+  "name": "@brasil-b2b/omie-exportador-contabil-dominio-alterdata",
+  "version": "1.0.0",
+  "description": "Organiza todos os XMLs autorizados, cancelados e inutilizados do mês em 1 clique para o contador.",
+  "main": "index.js",
+  "ecosystem": "Omie.Store",
+  "priceBRL": "R$ 69,90/mês"
+}

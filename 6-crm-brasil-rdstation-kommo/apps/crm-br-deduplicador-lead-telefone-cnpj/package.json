@@ -1,0 +1,8 @@
+{
+  "name": "@brasil-b2b/crm-br-deduplicador-lead-telefone-cnpj",
+  "version": "1.0.0",
+  "description": "Encontra e mescla leads duplicados com variações de 9º dígito e pontuação de CNPJ.",
+  "main": "index.js",
+  "ecosystem": "RD Station / Pipedrive / Kommo",
+  "priceBRL": "R$ 49,90/mês"
+}

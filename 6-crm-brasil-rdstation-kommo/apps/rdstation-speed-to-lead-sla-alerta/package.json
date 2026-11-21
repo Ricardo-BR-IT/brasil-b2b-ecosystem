@@ -1,0 +1,8 @@
+{
+  "name": "@brasil-b2b/rdstation-speed-to-lead-sla-alerta",
+  "version": "1.0.0",
+  "description": "Avisa o gestor no WhatsApp se um lead quente ficar mais de 5 minutos sem primeiro contato.",
+  "main": "index.js",
+  "ecosystem": "RD Station / Kommo",
+  "priceBRL": "R$ 49,90/mês"
+}

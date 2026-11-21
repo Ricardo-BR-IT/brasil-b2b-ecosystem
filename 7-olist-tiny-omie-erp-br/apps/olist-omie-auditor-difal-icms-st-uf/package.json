@@ -1,0 +1,8 @@
+{
+  "name": "@brasil-b2b/olist-omie-auditor-difal-icms-st-uf",
+  "version": "1.0.0",
+  "description": "Calcula e confere automaticamente guias GNRE/DIFAL por UF de destino antes do despacho.",
+  "main": "index.js",
+  "ecosystem": "Olist / Tiny / Omie",
+  "priceBRL": "R$ 69,90/mês"
+}

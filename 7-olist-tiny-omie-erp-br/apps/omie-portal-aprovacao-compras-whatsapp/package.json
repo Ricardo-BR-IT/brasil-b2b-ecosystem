@@ -1,0 +1,8 @@
+{
+  "name": "@brasil-b2b/omie-portal-aprovacao-compras-whatsapp",
+  "version": "1.0.0",
+  "description": "O diretor recebe o resumo da despesa no WhatsApp e aprova ou recusa sem abrir o ERP.",
+  "main": "index.js",
+  "ecosystem": "Omie.Store",
+  "priceBRL": "R$ 64,90/mês"
+}

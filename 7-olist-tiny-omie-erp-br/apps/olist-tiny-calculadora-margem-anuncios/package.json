@@ -1,0 +1,8 @@
+{
+  "name": "@brasil-b2b/olist-tiny-calculadora-margem-anuncios",
+  "version": "1.0.0",
+  "description": "Mostra quais SKUs estão dando prejuízo após frete grátis, comissão e imposto do Simples Nacional.",
+  "main": "index.js",
+  "ecosystem": "Olist / Tiny ERP",
+  "priceBRL": "R$ 49,90/mês"
+}

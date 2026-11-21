@@ -1,0 +1,8 @@
+{
+  "name": "@brasil-b2b/crm-br-radar-renovacao-churn-anual",
+  "version": "1.0.0",
+  "description": "Abre tarefa automática 60 dias antes do vencimento do contrato com índice de reajuste IPCA/IGP-M.",
+  "main": "index.js",
+  "ecosystem": "RD Station / Pipedrive",
+  "priceBRL": "R$ 59,90/mês"
+}

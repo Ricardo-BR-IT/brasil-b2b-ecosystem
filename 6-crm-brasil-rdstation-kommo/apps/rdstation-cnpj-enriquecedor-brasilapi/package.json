@@ -1,0 +1,8 @@
+{
+  "name": "@brasil-b2b/rdstation-cnpj-enriquecedor-brasilapi",
+  "version": "1.0.0",
+  "description": "Preenche automaticamente Razão Social, Capital Social, Sócios e Porte ao digitar o CNPJ no negócio.",
+  "main": "index.js",
+  "ecosystem": "RD Station App Store",
+  "priceBRL": "R$ 49,90/mês"
+}
