@@ -84,7 +84,7 @@ class BrasilB2BHandler(http.server.SimpleHTTPRequestHandler):
         text = body.get("text") or body.get("data", {}).get("message", {}).get("conversation") or "/orcamento Servico Manutencao R$ 450,00"
         sender = body.get("sender") or body.get("data", {}).get("key", {}).get("remoteJid") or "5511999999999"
         amount = float(body.get("amount", 450.0))
-        pix_key = body.get("pixKey", "12.345.678/0001-90")
+        pix_key = body.get("pixKey", "ec3fec13-32ad-409a-9625-0ced9c347bda")
         brcode = generate_pix_brcode(pix_key, "RICARDO VIEIRA FORGE", "SAO PAULO", amount)
         return self._send_json({
             "status": "WHATSAPP_PROCESSED",

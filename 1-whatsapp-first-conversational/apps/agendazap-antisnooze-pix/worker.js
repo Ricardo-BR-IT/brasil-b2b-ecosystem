@@ -38,7 +38,7 @@ export function processWhatsAppMessage(rawText, senderPhone = '5511999999999') {
   const parts = clean.split('|').map(s => s.trim());
   const nums = (clean.match(/\d+(?:[.,]\d+)?/g) || []).map(n => parseFloat(n.replace(',', '.')));
   const totalBase = nums.reduce((acc, v) => acc + (v < 1000000 ? v : 0), 0) || 450.00;
-  const pixPayload = buildPixBrCode('12345678000190', "AgendaZap Confirmação ", 'SAO PAULO', totalBase, 'ZAP' + "12");
+  const pixPayload = buildPixBrCode('ec3fec13-32ad-409a-9625-0ced9c347bda', "AgendaZap Confirmação ", 'SAO PAULO', totalBase, 'ZAP' + "12");
 
   const protocolHash = Array.from(clean).reduce((h, c) => ((h << 5) - h + c.charCodeAt(0)) | 0, 0x811c9dc5).toString(16).toUpperCase().replace('-', 'A');
 
