@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Simulador CLT vs PJ & Simples Nacional Fator ",
+  "short_name": "Simulador CL",
+  "version": "1.0.0",
+  "description": "Compara custo total de funcionário CLT vs PJ e calcula pró-labore necessário para atingir 28% do Fator R no Simples Nacional.",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "clipboardWrite"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Simulador CLT vs PJ & Simples Nacional Fator R (6% vs 15,5%)",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}

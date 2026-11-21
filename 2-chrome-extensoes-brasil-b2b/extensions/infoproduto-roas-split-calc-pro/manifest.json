@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Kiwify, Hotmart & Eduzz Calculadora ROAS, Ree",
+  "short_name": "Kiwify, Hotm",
+  "version": "1.0.0",
+  "description": "Calcula lucro líquido de infoprodutos descontando taxa da plataforma (8.99%+R$2,49), tráfego Meta/Google Ads, imposto NFS-e e coprod",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "clipboardWrite"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Kiwify, Hotmart & Eduzz Calculadora ROAS, Reembolso & Split",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}

@@ -1,0 +1,8 @@
+name = "contratozap-express-lgpd"
+main = "worker.js"
+compatibility_date = "2026-01-01"
+
+[vars]
+APP_NAME = "ContratoZap Express Prestação de Serviços & LGPD"
+TRIGGER_COMMAND = "/contrato"
+PRICE_TIER = "R$ 54,90/mês"

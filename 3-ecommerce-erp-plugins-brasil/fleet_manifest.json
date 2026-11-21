@@ -1,0 +1,141 @@
+{
+  "pillar": "3-ecommerce-erp-plugins-brasil",
+  "total_plugins": 15,
+  "plugins": [
+    {
+      "id": "01",
+      "slug": "nuvemshop-pix-desconto-progressivo",
+      "name": "Nuvemshop & Tray PIX Desconto Progressivo & QR Instantâneo",
+      "ecosystem": "Nuvemshop / Tray App Store",
+      "price_brl": "R$ 39,90/mês",
+      "description": "Aumenta conversão de checkout oferecendo 5% no PIX acima de R$ 100 e 10% acima de R$ 300 com copy-paste instantâneo.",
+      "zip": "dist/nuvemshop-pix-desconto-progressivo.zip"
+    },
+    {
+      "id": "02",
+      "slug": "bling-conciliador-ml-shopee-amazon",
+      "name": "Bling ERP Auditor de Taxas e Repasses Mercado Livre & Shopee",
+      "ecosystem": "Bling Loja de Extensões",
+      "price_brl": "R$ 59,90/mês",
+      "description": "Audita automaticamente cada pedido importado no Bling contra a comissão e frete descontados pelos marketplaces.",
+      "zip": "dist/bling-conciliador-ml-shopee-amazon.zip"
+    },
+    {
+      "id": "03",
+      "slug": "tiny-etiqueta-termica-zpl-danfe",
+      "name": "Tiny ERP & Olist Unificador de Etiqueta ZPL + DANFE Simplificada",
+      "ecosystem": "Tiny / Olist Ecossistema",
+      "price_brl": "R$ 49,90/mês",
+      "description": "Imprime etiqueta de envio 100x150mm (ZPL/PDF) já com a DANFE Simplificada e lista de separação (Picking List) na mesma folha.",
+      "zip": "dist/tiny-etiqueta-termica-zpl-danfe.zip"
+    },
+    {
+      "id": "04",
+      "slug": "wc-brasil-cpf-cnpj-cep-checkout",
+      "name": "WooCommerce Brasil Checkout Transparente CPF/CNPJ, IE & ViaCEP",
+      "ecosystem": "WordPress / WooCommerce BR",
+      "price_brl": "R$ 29,90/mês",
+      "description": "Adiciona máscara e validação real de CPF/CNPJ/Inscrição Estadual e preenchimento automático de endereço via CEP sem pesar o checkout.",
+      "zip": "dist/wc-brasil-cpf-cnpj-cep-checkout.zip"
+    },
+    {
+      "id": "05",
+      "slug": "nuvemshop-recuperador-carrinho-whatsapp",
+      "name": "Nuvemshop & Yampi Recuperador de Carrinho e PIX Expirado via WhatsApp",
+      "ecosystem": "Nuvemshop / Yampi",
+      "price_brl": "R$ 49,90/mês",
+      "description": "Dispara mensagem personalizada no WhatsApp 15 minutos após abandono de carrinho ou PIX não pago já com o código Copia-e-Cola.",
+      "zip": "dist/nuvemshop-recuperador-carrinho-whatsapp.zip"
+    },
+    {
+      "id": "06",
+      "slug": "bling-tiny-auditor-ncm-cfop-cest",
+      "name": "Bling & Tiny Validador Fiscal Preventivo NCM, CEST, CFOP & CSOSN",
+      "ecosystem": "Bling / Tiny ERP",
+      "price_brl": "R$ 54,90/mês",
+      "description": "Evita rejeição da Sefaz na Black Friday auditando todo o catálogo de produtos em busca de NCM extinto ou CFOP incompatível.",
+      "zip": "dist/bling-tiny-auditor-ncm-cfop-cest.zip"
+    },
+    {
+      "id": "07",
+      "slug": "vtex-tray-compre-junto-kit-leve",
+      "name": "VTEX & Tray Kit Compre Junto & Order Bump Ultra-Leve (<4KB)",
+      "ecosystem": "VTEX / Tray App Store",
+      "price_brl": "R$ 69,90/mês",
+      "description": "Aumenta o Ticket Médio (AOV) em 18% montando kits com desconto progressivo sem prejudicar o Core Web Vitals da loja.",
+      "zip": "dist/vtex-tray-compre-junto-kit-leve.zip"
+    },
+    {
+      "id": "08",
+      "slug": "omie-contaazul-cobranca-whatsapp-asaas",
+      "name": "Omie & Conta Azul Régua de Cobrança PIX/Boleto via WhatsApp",
+      "ecosystem": "Omie.Store / Conta Azul",
+      "price_brl": "R$ 64,90/mês",
+      "description": "Sincroniza contas a receber vencendo/vencidas no ERP e envia 2ª via de Boleto e PIX automaticamente no WhatsApp do cliente.",
+      "zip": "dist/omie-contaazul-cobranca-whatsapp-asaas.zip"
+    },
+    {
+      "id": "09",
+      "slug": "melhorenvio-correios-frete-inteligente",
+      "name": "Calculadora de Frete Contingência Correios, Jadlog & Melhor Envio",
+      "ecosystem": "Nuvemshop / WooCommerce BR",
+      "price_brl": "R$ 34,90/mês",
+      "description": "Garante que o checkout nunca fique fora do ar quando a API dos Correios cai, usando tabela de contingência local por faixa de CEP.",
+      "zip": "dist/melhorenvio-correios-frete-inteligente.zip"
+    },
+    {
+      "id": "10",
+      "slug": "bling-exportador-dominio-alterdata",
+      "name": "Bling & Tiny Exportador Contábil SPED / Domínio / Alterdata / Fortes",
+      "ecosystem": "Bling / Contabilidade BR",
+      "price_brl": "R$ 79,90/mês",
+      "description": "Empacota todos os XMLs de entrada/saída, inutilizações e cancelamentos do mês já no layout de importação do sistema do contador.",
+      "zip": "dist/bling-exportador-dominio-alterdata.zip"
+    },
+    {
+      "id": "11",
+      "slug": "wc-brasil-b2b-atacado-cnpj-minimo",
+      "name": "WooCommerce Brasil Atacado B2B: Preço por CNPJ e Pedido Mínimo",
+      "ecosystem": "WooCommerce B2B Brasil",
+      "price_brl": "R$ 49,90/mês",
+      "description": "Libera tabela de preço de atacado somente para CNPJ ativo na Receita Federal e exige pedido mínimo por grade/caixa fechada.",
+      "zip": "dist/wc-brasil-b2b-atacado-cnpj-minimo.zip"
+    },
+    {
+      "id": "12",
+      "slug": "nuvemshop-trocas-devolucoes-cdc",
+      "name": "Portal de Trocas, Devoluções (7 Dias CDC) e Logística Reversa BR",
+      "ecosystem": "Nuvemshop / Tray / Shopify BR",
+      "price_brl": "R$ 59,90/mês",
+      "description": "Automatiza solicitações de troca dentro do prazo de 7 dias do Código de Defesa do Consumidor gerando vale-compras para reter a receita.",
+      "zip": "dist/nuvemshop-trocas-devolucoes-cdc.zip"
+    },
+    {
+      "id": "13",
+      "slug": "ifood-anotaai-sincronizador-estoque-erp",
+      "name": "Sincronizador de Estoque e CMV: iFood / Delivery ↔ Bling & Tiny",
+      "ecosystem": "Food Service & ERP BR",
+      "price_brl": "R$ 69,90/mês",
+      "description": "Dá baixa automática de insumos no ERP a cada pedido concluído no delivery e pausa o item no cardápio se o estoque zerar.",
+      "zip": "dist/ifood-anotaai-sincronizador-estoque-erp.zip"
+    },
+    {
+      "id": "14",
+      "slug": "asaas-kiwify-emissor-nfse-split",
+      "name": "Orquestrador de Split de Nota Fiscal (NFS-e Produto vs Serviço)",
+      "ecosystem": "Infoprodutos & SaaS BR",
+      "price_brl": "R$ 79,90/mês",
+      "description": "Divide automaticamente a emissão de NF-e (e-book/livro imune de imposto) e NFS-e (mentoria/curso) após pagamento aprovado.",
+      "zip": "dist/asaas-kiwify-emissor-nfse-split.zip"
+    },
+    {
+      "id": "15",
+      "slug": "vtex-nuvemshop-cashback-pix-fidelidade",
+      "name": "Motor de Cashback Instantâneo & Carteira de Fidelidade para Varejo BR",
+      "ecosystem": "E-commerce Nacional",
+      "price_brl": "R$ 49,90/mês",
+      "description": "Concede crédito automático de 5% a 15% para a próxima compra com alerta de expiração via WhatsApp em 30 dias.",
+      "zip": "dist/vtex-nuvemshop-cashback-pix-fidelidade.zip"
+    }
+  ]
+}

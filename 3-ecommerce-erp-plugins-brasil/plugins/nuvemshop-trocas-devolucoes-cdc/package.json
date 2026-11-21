@@ -1,0 +1,9 @@
+{
+  "name": "@brasil-ecom-erp/nuvemshop-trocas-devolucoes-cdc",
+  "version": "1.0.0",
+  "description": "Automatiza solicitações de troca dentro do prazo de 7 dias do Código de Defesa do Consumidor gerando vale-compras para reter a receita.",
+  "main": "index.js",
+  "ecosystem": "Nuvemshop / Tray / Shopify BR",
+  "priceBRL": "R$ 59,90/mês",
+  "author": "Ricardo Vieira Forge Cloud"
+}

@@ -1,0 +1,20 @@
+{
+  "name": "@brasil-b2b/pontozap-diaria-equipe",
+  "version": "1.0.0",
+  "description": "PontoZap Horas Extras, Adicional Noturno & Recibo Diária — Processos trabalhistas por falta de recibo de diária e cálculo errado de hora extra 50%/100% e DSR. Calcula os encargos exatos no chat e emite o recibo pronto para assinatura.",
+  "main": "worker.js",
+  "type": "module",
+  "scripts": {
+    "start": "wrangler dev worker.js",
+    "deploy": "wrangler deploy worker.js"
+  },
+  "keywords": [
+    "whatsapp-first",
+    "brasil",
+    "pix",
+    "b2b",
+    "pontozap-diaria-equipe"
+  ],
+  "author": "Ricardo Vieira Forge Cloud (souza@usa.com)",
+  "license": "Commercial"
+}

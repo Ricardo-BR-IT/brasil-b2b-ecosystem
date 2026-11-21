@@ -1,0 +1,9 @@
+{
+  "name": "@brasil-ecom-erp/wc-brasil-cpf-cnpj-cep-checkout",
+  "version": "1.0.0",
+  "description": "Adiciona máscara e validação real de CPF/CNPJ/Inscrição Estadual e preenchimento automático de endereço via CEP sem pesar o checkout.",
+  "main": "index.js",
+  "ecosystem": "WordPress / WooCommerce BR",
+  "priceBRL": "R$ 29,90/mês",
+  "author": "Ricardo Vieira Forge Cloud"
+}

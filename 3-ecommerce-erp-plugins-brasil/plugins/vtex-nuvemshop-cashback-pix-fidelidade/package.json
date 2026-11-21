@@ -1,0 +1,9 @@
+{
+  "name": "@brasil-ecom-erp/vtex-nuvemshop-cashback-pix-fidelidade",
+  "version": "1.0.0",
+  "description": "Concede crédito automático de 5% a 15% para a próxima compra com alerta de expiração via WhatsApp em 30 dias.",
+  "main": "index.js",
+  "ecosystem": "E-commerce Nacional",
+  "priceBRL": "R$ 49,90/mês",
+  "author": "Ricardo Vieira Forge Cloud"
+}

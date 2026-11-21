@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "XML NF-e, NFC-e & DANFE Auditor Fiscal In-Bro",
+  "short_name": "XML NF-e, NF",
+  "version": "1.0.0",
+  "description": "Inspeciona XML de NF-e no navegador: CFOP, NCM, CEST, ICMS-ST, DIFAL, PIS/COFINS e chave de 44 dígitos sem enviar para servidor.",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "clipboardWrite"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "XML NF-e, NFC-e & DANFE Auditor Fiscal In-Browser",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}

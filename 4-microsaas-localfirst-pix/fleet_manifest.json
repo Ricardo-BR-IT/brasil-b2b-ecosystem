@@ -1,0 +1,126 @@
+{
+  "pillar": "4-microsaas-localfirst-pix",
+  "total_microsaas": 15,
+  "apps": [
+    {
+      "id": "01",
+      "slug": "conversor-xml-nfe-para-excel",
+      "name": "Conversor em Lote de XML NF-e / NFC-e para Excel e CSV Contábil",
+      "seo_keyword": "converter xml nfe para excel gratis online",
+      "price_brl": "R$ 29,90/mês ou R$ 97 Vitalício no PIX",
+      "path": "apps/conversor-xml-nfe-para-excel/index.html"
+    },
+    {
+      "id": "02",
+      "slug": "gerador-danfe-etiqueta-termica",
+      "name": "Gerador de DANFE Simplificada + Etiqueta Térmica 100x150mm no Navegador",
+      "seo_keyword": "gerador danfe simplificada etiqueta 100x150 gratis",
+      "price_brl": "R$ 29,90/mês ou R$ 97 Vitalício no PIX",
+      "path": "apps/gerador-danfe-etiqueta-termica/index.html"
+    },
+    {
+      "id": "03",
+      "slug": "conversor-extrato-ofx-pdf-csv",
+      "name": "Conversor de Extrato Bancário OFX e PDF (Itaú/Bradesco/Nubank/Inter) para Excel",
+      "seo_keyword": "converter extrato ofx pdf para excel conciliacao",
+      "price_brl": "R$ 34,90/mês ou R$ 119 Vitalício no PIX",
+      "path": "apps/conversor-extrato-ofx-pdf-csv/index.html"
+    },
+    {
+      "id": "04",
+      "slug": "simulador-reforma-tributaria-ibs-cbs",
+      "name": "Simulador da Reforma Tributária (CBS + IBS 2026-2033) para Empresas Brasileiras",
+      "seo_keyword": "calculadora reforma tributaria ibs cbs simples nacional",
+      "price_brl": "R$ 49,90/mês ou R$ 147 Vitalício no PIX",
+      "path": "apps/simulador-reforma-tributaria-ibs-cbs/index.html"
+    },
+    {
+      "id": "05",
+      "slug": "gerador-orcamento-os-pdf-pwa",
+      "name": "PWA Offline-First Gerador de Orçamento, Recibo e Ordem de Serviço em PDF",
+      "seo_keyword": "gerador orcamento e ordem de servico pdf online",
+      "price_brl": "R$ 24,90/mês ou R$ 89 Vitalício no PIX",
+      "path": "apps/gerador-orcamento-os-pdf-pwa/index.html"
+    },
+    {
+      "id": "06",
+      "slug": "calculadora-rescisao-clt-ferias",
+      "name": "Calculadora Completa de Rescisão Trabalhista CLT, Férias, 13º e Multa 40% FGTS",
+      "seo_keyword": "calculadora rescisao trabalhista exata com memoria de calculo",
+      "price_brl": "R$ 19,90/mês ou R$ 67 Vitalício no PIX",
+      "path": "apps/calculadora-rescisao-clt-ferias/index.html"
+    },
+    {
+      "id": "07",
+      "slug": "auditor-fator-r-simples-nacional",
+      "name": "Planejador Tributário Simples Nacional: Otimizador do Fator R (Anexo III vs V)",
+      "seo_keyword": "calculadora fator r simples nacional 28 por cento",
+      "price_brl": "R$ 39,90/mês ou R$ 127 Vitalício no PIX",
+      "path": "apps/auditor-fator-r-simples-nacional/index.html"
+    },
+    {
+      "id": "08",
+      "slug": "gerador-contrato-aluguel-servico",
+      "name": "Gerador Jurídico de Contrato de Locação (Lei 8.245) e Prestação de Serviços PDF",
+      "seo_keyword": "gerador contrato prestacao servicos e aluguel pdf",
+      "price_brl": "R$ 29,90/mês ou R$ 97 Vitalício no PIX",
+      "path": "apps/gerador-contrato-aluguel-servico/index.html"
+    },
+    {
+      "id": "09",
+      "slug": "calculadora-difal-icms-st-mva",
+      "name": "Calculadora Fiscal de ICMS-ST, MVA Ajustada e DIFAL Interestadual por UF",
+      "seo_keyword": "calculadora icms st mva ajustada e difal online",
+      "price_brl": "R$ 39,90/mês ou R$ 127 Vitalício no PIX",
+      "path": "apps/calculadora-difal-icms-st-mva/index.html"
+    },
+    {
+      "id": "10",
+      "slug": "higienizador-planilha-whatsapp-ddd",
+      "name": "Higienizador de Planilhas de Contatos: Padronizador DDD +55, 9º Dígito e Deduplicação",
+      "seo_keyword": "formatar lista de telefones para whatsapp 9 digito excel",
+      "price_brl": "R$ 29,90/mês ou R$ 97 Vitalício no PIX",
+      "path": "apps/higienizador-planilha-whatsapp-ddd/index.html"
+    },
+    {
+      "id": "11",
+      "slug": "precificador-cardapio-ficha-tecnica",
+      "name": "Gerador de Ficha Técnica Operacional (FTO) e Precificação de Cardápio para Restaurantes",
+      "seo_keyword": "planilha ficha tecnica restaurante e calculo cmv online",
+      "price_brl": "R$ 34,90/mês ou R$ 119 Vitalício no PIX",
+      "path": "apps/precificador-cardapio-ficha-tecnica/index.html"
+    },
+    {
+      "id": "12",
+      "slug": "validador-lote-cnpj-situacao-cadastral",
+      "name": "Consultor e Validador em Lote de CNPJs (QSA, CNAE, CEP e Situação Cadastral)",
+      "seo_keyword": "consulta cnpj em lote para excel gratis",
+      "price_brl": "R$ 39,90/mês ou R$ 127 Vitalício no PIX",
+      "path": "apps/validador-lote-cnpj-situacao-cadastral/index.html"
+    },
+    {
+      "id": "13",
+      "slug": "gerador-placa-qrcode-pix-estatico",
+      "name": "Estúdio Gerador de Plaquinha QR Code PIX Imprimível + BRCode Banco Central",
+      "seo_keyword": "criar placa qr code pix para imprimir pdf",
+      "price_brl": "R$ 19,90/mês ou R$ 59 Vitalício no PIX",
+      "path": "apps/gerador-placa-qrcode-pix-estatico/index.html"
+    },
+    {
+      "id": "14",
+      "slug": "calculadora-juros-financiamento-sac-price",
+      "name": "Auditor de Contratos Bancários: Simulador SAC vs Price e Taxa Efetiva CET",
+      "seo_keyword": "simulador amortizacao sac price e juros abusivos",
+      "price_brl": "R$ 29,90/mês ou R$ 97 Vitalício no PIX",
+      "path": "apps/calculadora-juros-financiamento-sac-price/index.html"
+    },
+    {
+      "id": "15",
+      "slug": "anonimizador-documentos-lgpd-pdf",
+      "name": "Anonimizador e Mascarador de CPF, RG, CNPJ e Dados Pessoais (LGPD) em Textos e CSV",
+      "seo_keyword": "anonimizar cpf e dados pessoais lgpd documento",
+      "price_brl": "R$ 34,90/mês ou R$ 119 Vitalício no PIX",
+      "path": "apps/anonimizador-documentos-lgpd-pdf/index.html"
+    }
+  ]
+}

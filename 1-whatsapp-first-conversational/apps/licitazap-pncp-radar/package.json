@@ -1,0 +1,20 @@
+{
+  "name": "@brasil-b2b/licitazap-pncp-radar",
+  "version": "1.0.0",
+  "description": "LicitaZap Calculadora de Lance Mínimo & Inexequibilidade (Lei 14.133) — Mergulhar no preço durante a disputa do Pregão Eletrônico (Compras.gov / PNCP) e tomar prejuízo ou ter a proposta desclassificada por inexequibilidade (Art. 59 §4º Lei 14.133/2021 - 75% em obras).",
+  "main": "worker.js",
+  "type": "module",
+  "scripts": {
+    "start": "wrangler dev worker.js",
+    "deploy": "wrangler deploy worker.js"
+  },
+  "keywords": [
+    "whatsapp-first",
+    "brasil",
+    "pix",
+    "b2b",
+    "licitazap-pncp-radar"
+  ],
+  "author": "Ricardo Vieira Forge Cloud (souza@usa.com)",
+  "license": "Commercial"
+}

@@ -1,0 +1,20 @@
+{
+  "name": "@brasil-b2b/agendazap-antisnooze-pix",
+  "version": "1.0.0",
+  "description": "AgendaZap Confirmação Anti-Falta & Sinal PIX 30% — 30% dos clientes marcam horário e não aparecem (no-show). Gera o voucher de agendamento com cobrança automática de 30% de sinal via PIX Copia-e-Cola e termos de remarcação.",
+  "main": "worker.js",
+  "type": "module",
+  "scripts": {
+    "start": "wrangler dev worker.js",
+    "deploy": "wrangler deploy worker.js"
+  },
+  "keywords": [
+    "whatsapp-first",
+    "brasil",
+    "pix",
+    "b2b",
+    "agendazap-antisnooze-pix"
+  ],
+  "author": "Ricardo Vieira Forge Cloud (souza@usa.com)",
+  "license": "Commercial"
+}

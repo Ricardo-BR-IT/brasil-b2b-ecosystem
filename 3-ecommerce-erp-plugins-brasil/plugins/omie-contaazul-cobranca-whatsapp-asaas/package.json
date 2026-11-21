@@ -1,0 +1,9 @@
+{
+  "name": "@brasil-ecom-erp/omie-contaazul-cobranca-whatsapp-asaas",
+  "version": "1.0.0",
+  "description": "Sincroniza contas a receber vencendo/vencidas no ERP e envia 2ª via de Boleto e PIX automaticamente no WhatsApp do cliente.",
+  "main": "index.js",
+  "ecosystem": "Omie.Store / Conta Azul",
+  "priceBRL": "R$ 64,90/mês",
+  "author": "Ricardo Vieira Forge Cloud"
+}

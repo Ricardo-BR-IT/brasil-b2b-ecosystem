@@ -1,0 +1,8 @@
+name = "orcazap-pdf-pro"
+main = "worker.js"
+compatibility_date = "2026-01-01"
+
+[vars]
+APP_NAME = "OrçaZap PDF Timbrado & PIX Pro"
+TRIGGER_COMMAND = "/orcamento"
+PRICE_TIER = "R$ 49,90/mês"

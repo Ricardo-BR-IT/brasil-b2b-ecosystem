@@ -1,0 +1,8 @@
+name = "agendazap-antisnooze-pix"
+main = "worker.js"
+compatibility_date = "2026-01-01"
+
+[vars]
+APP_NAME = "AgendaZap Confirmação Anti-Falta & Sinal PIX 30%"
+TRIGGER_COMMAND = "/agenda"
+PRICE_TIER = "R$ 44,90/mês"

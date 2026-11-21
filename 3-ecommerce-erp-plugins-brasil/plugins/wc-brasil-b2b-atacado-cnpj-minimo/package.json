@@ -1,0 +1,9 @@
+{
+  "name": "@brasil-ecom-erp/wc-brasil-b2b-atacado-cnpj-minimo",
+  "version": "1.0.0",
+  "description": "Libera tabela de preço de atacado somente para CNPJ ativo na Receita Federal e exige pedido mínimo por grade/caixa fechada.",
+  "main": "index.js",
+  "ecosystem": "WooCommerce B2B Brasil",
+  "priceBRL": "R$ 49,90/mês",
+  "author": "Ricardo Vieira Forge Cloud"
+}

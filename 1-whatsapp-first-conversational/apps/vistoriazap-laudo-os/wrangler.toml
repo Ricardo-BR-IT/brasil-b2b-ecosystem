@@ -1,0 +1,8 @@
+name = "vistoriazap-laudo-os"
+main = "worker.js"
+compatibility_date = "2026-01-01"
+
+[vars]
+APP_NAME = "VistoriaZap Laudo Técnico & Ordem de Serviço PDF"
+TRIGGER_COMMAND = "/vistoria"
+PRICE_TIER = "R$ 69,90/mês"

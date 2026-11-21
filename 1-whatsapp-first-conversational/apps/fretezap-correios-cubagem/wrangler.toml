@@ -1,0 +1,8 @@
+name = "fretezap-correios-cubagem"
+main = "worker.js"
+compatibility_date = "2026-01-01"
+
+[vars]
+APP_NAME = "FreteZap Cubagem Aérea/Rodoviária, PAC/Sedex & Difal"
+TRIGGER_COMMAND = "/frete"
+PRICE_TIER = "R$ 39,90/mês"

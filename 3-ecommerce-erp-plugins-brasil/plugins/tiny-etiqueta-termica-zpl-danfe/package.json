@@ -1,0 +1,9 @@
+{
+  "name": "@brasil-ecom-erp/tiny-etiqueta-termica-zpl-danfe",
+  "version": "1.0.0",
+  "description": "Imprime etiqueta de envio 100x150mm (ZPL/PDF) já com a DANFE Simplificada e lista de separação (Picking List) na mesma folha.",
+  "main": "index.js",
+  "ecosystem": "Tiny / Olist Ecossistema",
+  "priceBRL": "R$ 49,90/mês",
+  "author": "Ricardo Vieira Forge Cloud"
+}

@@ -1,0 +1,8 @@
+name = "imobzap-sac-price-itbi"
+main = "worker.js"
+compatibility_date = "2026-01-01"
+
+[vars]
+APP_NAME = "ImobZap Simulador SAC vs Price, FGTS & Custos de Escritura/ITBI"
+TRIGGER_COMMAND = "/imovel"
+PRICE_TIER = "R$ 59,90/mês"

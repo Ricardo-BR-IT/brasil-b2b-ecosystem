@@ -1,0 +1,171 @@
+{
+  "pillar": "1-whatsapp-first-conversational",
+  "total_apps": 15,
+  "apps": [
+    {
+      "id": "01",
+      "slug": "orcazap-pdf-pro",
+      "name": "OrçaZap PDF Timbrado & PIX Pro",
+      "trigger": "/orcamento",
+      "price_brl": "R$ 49,90/mês",
+      "target_audience": "Prestadores de serviço, oficinas, clínicas, técnicos de refrigeração, eletricistas e gráficas",
+      "pain_solved": "Dono de PME perde vendas porque demora horas para abrir computador e fazer orçamento. No OrçaZap ele manda texto ou áudio no WhatsApp e recebe o PDF timbrado com QR Code PIX em 3 segundos.",
+      "sample_input": "Cliente: Clínica Sorriso | 3x Limpeza Ar Split 12000 BTUs R$ 180 | 1x Carga de Gás R$ 220 | Desconto PIX: 10% | Chave PIX: 12.345.678/0001-90",
+      "category": "Vendas & Orçamentos"
+    },
+    {
+      "id": "02",
+      "slug": "notazap-xml-cupom-ocr",
+      "name": "NotaZap Leitor XML NF-e & Cupom OCR",
+      "trigger": "/nota",
+      "price_brl": "R$ 59,90/mês",
+      "target_audience": "Comércio varejista, restaurantes, mercados e escritórios contábeis",
+      "pain_solved": "Digitação manual de notas de compra e perda de XMLs fiscais. O empresário encaminha o XML ou foto do cupom para o WhatsApp e recebe a planilha de entrada com NCM, CFOP, ICMS e vencimentos.",
+      "sample_input": "Fornecedor: Distribuidora Brasil LTDA | CNPJ: 11.222.333/0001-81 | NF-e: 000458921 | CFOP: 5102 | NCM: 8471.30.12 | Valor Total: R$ 4.850,00 | ICMS: 18%",
+      "category": "Fiscal & Contábil"
+    },
+    {
+      "id": "03",
+      "slug": "caixazap-dre-fluxo",
+      "name": "CaixaZap Fechamento Diário & Mini-DRE",
+      "trigger": "/caixa",
+      "price_brl": "R$ 39,90/mês",
+      "target_audience": "Lojas de rua, salões de beleza, barbearias, lanchonetes e MEIs",
+      "pain_solved": "Empresário não sabe se teve lucro no mês porque não alimenta ERP. No CaixaZap ele manda 'vendi 650 pix, paguei 180 fornecedor' no chat e recebe o DRE com Margem Líquida e Ponto de Equilíbrio.",
+      "sample_input": "+1450.00 Vendas PIX | +980.00 Vendas Cartão | -620.00 Reposição Estoque | -180.00 Energia Elétrica | -95.00 Internet | -120.00 Taxas Maquininha",
+      "category": "Gestão Financeira"
+    },
+    {
+      "id": "04",
+      "slug": "cobrazap-pix-regua",
+      "name": "CobraZap PIX EMV & Régua Anti-Calote",
+      "trigger": "/cobrar",
+      "price_brl": "R$ 49,90/mês",
+      "target_audience": "Escolas, academias, contabilidades, locadoras e prestadores recorrentes",
+      "pain_solved": "Constrangimento ao cobrar clientes inadimplentes no WhatsApp. Gera o código PIX Copia-e-Cola com multa/juros (2% + 1% a.m.) e a régua completa de 4 mensagens amigáveis dentro da lei (Art. 42 CDC).",
+      "sample_input": "Devedor: Marcos Oliveira | Valor Original: R$ 850,00 | Dias em Atraso: 18 | Multa: 2% | Juros Mensal: 1% | Chave PIX: financeiro@empresa.com.br",
+      "category": "Cobrança & Recebíveis"
+    },
+    {
+      "id": "05",
+      "slug": "vistoriazap-laudo-os",
+      "name": "VistoriaZap Laudo Técnico & Ordem de Serviço PDF",
+      "trigger": "/vistoria",
+      "price_brl": "R$ 69,90/mês",
+      "target_audience": "Imobiliárias, assistência técnica, energia solar, dedetizadoras e engenheiros",
+      "pain_solved": "Vistorias feitas no papel ou perdidas em mensagens soltas. O técnico preenche o checklist no chat e gera um Laudo/OS oficial numerado com hash SHA-256 de integridade jurídica e garantia.",
+      "sample_input": "Local: Apto 402 Ed. Horizonte | Técnico: Carlos Mendes | Itens OK: Pintura, Hidráulica, Quadro Elétrico | Pendências: Trinca vidro varanda, Fechadura porta serviço | Garantia: 90 dias",
+      "category": "Operações de Campo"
+    },
+    {
+      "id": "06",
+      "slug": "fichazap-cnpj-score",
+      "name": "FichaZap Consulta CNPJ, QSA, CNAE & Risco B2B",
+      "trigger": "/cnpj",
+      "price_brl": "R$ 44,90/mês",
+      "target_audience": "Atacadistas, distribuidoras, representantes comerciais e analistas de crédito",
+      "pain_solved": "Vender faturado no boleto para CNPJ inapto ou recém-aberto com capital de R$ 100. Basta digitar o CNPJ no WhatsApp para validar na Receita/BrasilAPI e gerar a Ficha de Aprovação de Crédito.",
+      "sample_input": "33.000.167/0001-01 | Limite Solicitado: R$ 15.000,00 | Prazo Boleto: 28/56 dias",
+      "category": "Crédito & Compliance"
+    },
+    {
+      "id": "07",
+      "slug": "contratozap-express-lgpd",
+      "name": "ContratoZap Express Prestação de Serviços & LGPD",
+      "trigger": "/contrato",
+      "price_brl": "R$ 54,90/mês",
+      "target_audience": "Agências de marketing, freelancers, fotógrafos, arquitetos e consultores",
+      "pain_solved": "Fechar serviço 'de boca' no WhatsApp e levar calote ou sofrer escopo infinito. Gera contrato completo regido pelo Código Civil (Arts. 593-609) + cláusula LGPD + termo de aceite em 5 segundos.",
+      "sample_input": "Contratante: Padaria Pão Dourado LTDA (14.555.888/0001-22) | Serviço: Gestão de Tráfego Pago e Redes Sociais | Valor: R$ 1.800,00/mês | Prazo: 6 meses | Foro: São Paulo/SP",
+      "category": "Jurídico & Contratos"
+    },
+    {
+      "id": "08",
+      "slug": "pontozap-diaria-equipe",
+      "name": "PontoZap Horas Extras, Adicional Noturno & Recibo Diária",
+      "trigger": "/ponto",
+      "price_brl": "R$ 49,90/mês",
+      "target_audience": "Construtoras, empreiteiros, eventos, restaurantes e limpeza terceirizada",
+      "pain_solved": "Processos trabalhistas por falta de recibo de diária e cálculo errado de hora extra 50%/100% e DSR. Calcula os encargos exatos no chat e emite o recibo pronto para assinatura.",
+      "sample_input": "Colaborador: João Batista | Salário Base: R$ 2.420,00 | Horas Extras 50%: 14h | Horas Extras 100%: 6h | Adicional Noturno: 18h | Diárias Extras: 2 x R$ 150,00",
+      "category": "RH & Departamento Pessoal"
+    },
+    {
+      "id": "09",
+      "slug": "estoquezap-curva-abc",
+      "name": "EstoqueZap Alerta de Ruptura, Curva ABC & Pedido Compra",
+      "trigger": "/estoque",
+      "price_brl": "R$ 59,90/mês",
+      "target_audience": "Autopeças, materiais de construção, depósitos de bebidas e papelarias",
+      "pain_solved": "Falta do produto que mais vende na prateleira e dinheiro parado em item sem giro. Calcula o Ponto de Reposição, classifica a Curva ABC e monta a mensagem de pedido pronta para o fornecedor.",
+      "sample_input": "Cimento CP-II 50kg: Estoque=18, Min=50, Custo=R$ 31,00, Giro=220/mês | Argamassa AC-III: Estoque=12, Min=30, Custo=R$ 24,50, Giro=95/mês | Tinta Acrílica 18L: Estoque=25, Min=15, Custo=R$ 189,00, Giro=40/mês",
+      "category": "Estoque & Compras"
+    },
+    {
+      "id": "10",
+      "slug": "fretezap-correios-cubagem",
+      "name": "FreteZap Cubagem Aérea/Rodoviária, PAC/Sedex & Difal",
+      "trigger": "/frete",
+      "price_brl": "R$ 39,90/mês",
+      "target_audience": "Vendedores de WhatsApp, atacadistas do Brás/Bom Retiro e distribuidoras",
+      "pain_solved": "Prejuízo no frete por esquecer o peso cubado (C x L x A / 6000) em caixas volumosas. Calcula peso taxável real, comparativo Transportadora vs Sedex/PAC e seguro Ad Valorem/GRIS.",
+      "sample_input": "Origem: 01001-000 | Destino: 70040-010 | Caixa: 60x45x40 cm | Peso Real: 8.5 kg | Valor NF: R$ 2.400,00",
+      "category": "Logística & Frete"
+    },
+    {
+      "id": "11",
+      "slug": "precificazap-ifood-markup",
+      "name": "PrecificaZap Ficha Técnica, CMV, Taxa iFood & Maquininha",
+      "trigger": "/preco",
+      "price_brl": "R$ 49,90/mês",
+      "target_audience": "Restaurantes, hamburguerias, pizzarias, confeitarias e lojistas",
+      "pain_solved": "Restaurante vende muito no iFood mas fecha no vermelho porque multiplicou o custo por 2 sem somar 27,2% do iFood + 6% imposto + embalagem. Calcula o preço de cardápio no balcão e no app com lucro líquido garantido.",
+      "sample_input": "Produto: Combo Smash Duplo + Fritas | Custo Insumos: R$ 14,20 | Embalagem: R$ 2,60 | Taxa iFood Entrega Parceira: 26.2% | Taxa Maquininha Balcão: 3.49% | Imposto Simples: 4.5% | Lucro Líquido Alvo: 20%",
+      "category": "Food Service & Precificação"
+    },
+    {
+      "id": "12",
+      "slug": "agendazap-antisnooze-pix",
+      "name": "AgendaZap Confirmação Anti-Falta & Sinal PIX 30%",
+      "trigger": "/agenda",
+      "price_brl": "R$ 44,90/mês",
+      "target_audience": "Dentistas, psicólogos, clínicas de estética, tatuadores e barbearias",
+      "pain_solved": "30% dos clientes marcam horário e não aparecem (no-show). Gera o voucher de agendamento com cobrança automática de 30% de sinal via PIX Copia-e-Cola e termos de remarcação.",
+      "sample_input": "Paciente: Juliana Costa | Procedimento: Harmonização / Limpeza Profunda | Data: 25/11/2026 às 14:30 | Valor Total: R$ 450,00 | Sinal Reserva: 30% | PIX: clinica@estetica.com.br",
+      "category": "Saúde & Agendamentos"
+    },
+    {
+      "id": "13",
+      "slug": "comissaozap-split-vendas",
+      "name": "ComissãoZap Split de Vendedores, Metas & Desconto MDR",
+      "trigger": "/comissao",
+      "price_brl": "R$ 49,90/mês",
+      "target_audience": "Lojas de móveis, concessionárias, clínicas odontológicas e infoprodutores",
+      "pain_solved": "Pagar comissão cheia sobre o valor bruto de vendas parceladas em 12x (perdendo 14% de taxa de antecipação). Calcula a comissão líquida após MDR, bônus de meta batida e DSR sobre comissão.",
+      "sample_input": "Vendedor: Rafael Almeida | Vendas PIX/Vista: R$ 28.000 | Vendas Cartão 10x: R$ 42.000 (Taxa Antecipação 11.8%) | Meta Mensal: R$ 60.000 | Comissão Base: 4% | Bônus Supermeta: +1.5%",
+      "category": "Comercial & Vendas"
+    },
+    {
+      "id": "14",
+      "slug": "licitazap-pncp-radar",
+      "name": "LicitaZap Calculadora de Lance Mínimo & Inexequibilidade (Lei 14.133)",
+      "trigger": "/licitacao",
+      "price_brl": "R$ 89,90/mês",
+      "target_audience": "Fornecedores do governo, construtoras e empresas participantes de pregões eletrônicos",
+      "pain_solved": "Mergulhar no preço durante a disputa do Pregão Eletrônico (Compras.gov / PNCP) e tomar prejuízo ou ter a proposta desclassificada por inexequibilidade (Art. 59 §4º Lei 14.133/2021 - 75% em obras).",
+      "sample_input": "Órgão: Prefeitura Municipal | Valor Estimado Edital: R$ 480.000,00 | Custo Direto Total: R$ 295.000,00 | Impostos + BDI Mínimo: 16.5% | Tipo: Obra/Serviço de Engenharia",
+      "category": "Setor Público & Licitações"
+    },
+    {
+      "id": "15",
+      "slug": "imobzap-sac-price-itbi",
+      "name": "ImobZap Simulador SAC vs Price, FGTS & Custos de Escritura/ITBI",
+      "trigger": "/imovel",
+      "price_brl": "R$ 59,90/mês",
+      "target_audience": "Corretores de imóveis, imobiliárias e correspondentes bancários Caixa/Bancos",
+      "pain_solved": "Comprador desiste na hora da assinatura porque não sabia que precisava de +5% para ITBI, Registro e Avaliação além da entrada. Gera a lâmina comparativa SAC vs Price + custos de cartório pronta para o WhatsApp.",
+      "sample_input": "Imóvel: R$ 650.000,00 | Entrada + FGTS: R$ 150.000,00 | Prazo: 360 meses | Taxa Juros Anual: 9.85% a.a. | Alíquota ITBI Município: 3.0%",
+      "category": "Mercado Imobiliário"
+    }
+  ]
+}

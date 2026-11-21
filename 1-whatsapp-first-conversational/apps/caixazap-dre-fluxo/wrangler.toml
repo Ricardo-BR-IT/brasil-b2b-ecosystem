@@ -1,0 +1,8 @@
+name = "caixazap-dre-fluxo"
+main = "worker.js"
+compatibility_date = "2026-01-01"
+
+[vars]
+APP_NAME = "CaixaZap Fechamento Diário & Mini-DRE"
+TRIGGER_COMMAND = "/caixa"
+PRICE_TIER = "R$ 39,90/mês"

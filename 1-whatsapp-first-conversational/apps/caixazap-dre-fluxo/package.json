@@ -1,0 +1,20 @@
+{
+  "name": "@brasil-b2b/caixazap-dre-fluxo",
+  "version": "1.0.0",
+  "description": "CaixaZap Fechamento Diário & Mini-DRE — Empresário não sabe se teve lucro no mês porque não alimenta ERP. No CaixaZap ele manda 'vendi 650 pix, paguei 180 fornecedor' no chat e recebe o DRE com Margem Líquida e Ponto de Equilíbrio.",
+  "main": "worker.js",
+  "type": "module",
+  "scripts": {
+    "start": "wrangler dev worker.js",
+    "deploy": "wrangler deploy worker.js"
+  },
+  "keywords": [
+    "whatsapp-first",
+    "brasil",
+    "pix",
+    "b2b",
+    "caixazap-dre-fluxo"
+  ],
+  "author": "Ricardo Vieira Forge Cloud (souza@usa.com)",
+  "license": "Commercial"
+}

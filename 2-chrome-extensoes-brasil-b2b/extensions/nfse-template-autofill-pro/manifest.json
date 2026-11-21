@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Portal Nacional NFS-e & Prefeituras Calculado",
+  "short_name": "Portal Nacio",
+  "version": "1.0.0",
+  "description": "Calcula automaticamente retenções na fonte (IRRF 1,5%, CSRF 4,65%, ISS 2%-5%, INSS 11%) e gera o texto padrão da discriminação da NF",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "clipboardWrite"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Portal Nacional NFS-e & Prefeituras Calculador de Retenções",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}

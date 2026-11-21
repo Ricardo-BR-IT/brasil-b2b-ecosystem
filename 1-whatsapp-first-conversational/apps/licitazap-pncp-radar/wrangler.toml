@@ -1,0 +1,8 @@
+name = "licitazap-pncp-radar"
+main = "worker.js"
+compatibility_date = "2026-01-01"
+
+[vars]
+APP_NAME = "LicitaZap Calculadora de Lance Mínimo & Inexequibilidade (Lei 14.133)"
+TRIGGER_COMMAND = "/licitacao"
+PRICE_TIER = "R$ 89,90/mês"

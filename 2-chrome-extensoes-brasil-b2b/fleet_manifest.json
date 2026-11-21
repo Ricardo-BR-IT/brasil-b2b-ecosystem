@@ -1,0 +1,126 @@
+{
+  "pillar": "2-chrome-extensoes-brasil-b2b",
+  "total_extensions": 15,
+  "extensions": [
+    {
+      "id": "01",
+      "slug": "ml-shopee-margem-liquida-pro",
+      "name": "Mercado Livre & Shopee Calculadora Margem Real Pro",
+      "description": "Calcula lucro líquido real na tela do anúncio descontando comissão Clássico/Premium, taxa fixa R$ 6, frete grátis e Simples Nacional.",
+      "price_brl": "R$ 29,90/mês",
+      "zip": "dist/ml-shopee-margem-liquida-pro.zip"
+    },
+    {
+      "id": "02",
+      "slug": "whatsapp-crm-kanban-lgpd-pro",
+      "name": "WhatsApp Web CRM Kanban & LGPD Privacy Blur Pro",
+      "description": "Organiza conversas em colunas Kanban locais (IndexedDB) e desfoca nomes/mensagens sensíveis (LGPD) em 1 clique.",
+      "price_brl": "R$ 34,90/mês",
+      "zip": "dist/whatsapp-crm-kanban-lgpd-pro.zip"
+    },
+    {
+      "id": "03",
+      "slug": "ecac-sefaz-table-exporter-pro",
+      "name": "e-CAC, Sefaz & Gov.br Exportador de Tabelas Excel Pro",
+      "description": "Extrai tabelas fiscais paginadas do e-CAC, Sefaz e portais públicos direto para CSV/Excel com moeda BRL e datas DD/MM/AAAA.",
+      "price_brl": "R$ 39,90/mês",
+      "zip": "dist/ecac-sefaz-table-exporter-pro.zip"
+    },
+    {
+      "id": "04",
+      "slug": "pje-prazos-feriados-calc-pro",
+      "name": "PJe & Tribunais Calculadora de Prazos & Dias Úteis BR",
+      "description": "Calcula prazos processuais CPC/CLT em dias úteis descontando feriados nacionais e recesso forense dentro do navegador.",
+      "price_brl": "R$ 29,90/mês",
+      "zip": "dist/pje-prazos-feriados-calc-pro.zip"
+    },
+    {
+      "id": "05",
+      "slug": "cnpj-cep-autofill-validator-pro",
+      "name": "CNPJ, CPF, IE & CEP Validador e Autopreenchimento BR",
+      "description": "Valida dígitos verificadores de CPF/CNPJ, consulta Receita/BrasilAPI e ViaCEP e limpa pontuação para colar em ERPs.",
+      "price_brl": "R$ 19,90/mês",
+      "zip": "dist/cnpj-cep-autofill-validator-pro.zip"
+    },
+    {
+      "id": "06",
+      "slug": "ifood-cardapio-cmv-auditor-pro",
+      "name": "iFood & Delivery Auditor de Cardápio, CMV e Taxas Pro",
+      "description": "Audita margem líquida prato a prato no Portal do Parceiro iFood considerando plano Básico/Entrega, taxa online 3.2% e embalagem.",
+      "price_brl": "R$ 34,90/mês",
+      "zip": "dist/ifood-cardapio-cmv-auditor-pro.zip"
+    },
+    {
+      "id": "07",
+      "slug": "nfe-xml-danfe-inspector-pro",
+      "name": "XML NF-e, NFC-e & DANFE Auditor Fiscal In-Browser",
+      "description": "Inspeciona XML de NF-e no navegador: CFOP, NCM, CEST, ICMS-ST, DIFAL, PIS/COFINS e chave de 44 dígitos sem enviar para servidor.",
+      "price_brl": "R$ 39,90/mês",
+      "zip": "dist/nfe-xml-danfe-inspector-pro.zip"
+    },
+    {
+      "id": "08",
+      "slug": "pix-brcode-qrcode-generator-pro",
+      "name": "Gerador PIX Copia-e-Cola (BRCode BCB) & Cobrança 1-Click",
+      "description": "Gera código PIX EMV oficial do Banco Central com valor exato, TXID, CRC16 e link direto para WhatsApp.",
+      "price_brl": "R$ 19,90/mês",
+      "zip": "dist/pix-brcode-qrcode-generator-pro.zip"
+    },
+    {
+      "id": "09",
+      "slug": "bling-tiny-conciliador-marketplace",
+      "name": "Bling & Tiny ERP Conciliador de Repasses Marketplace",
+      "description": "Cruza o valor do pedido no Bling/Tiny com o repasse líquido do Mercado Livre, Shopee e Amazon BR para achar diferenças.",
+      "price_brl": "R$ 44,90/mês",
+      "zip": "dist/bling-tiny-conciliador-marketplace.zip"
+    },
+    {
+      "id": "10",
+      "slug": "correcao-monetaria-selic-ipca-pro",
+      "name": "Calculadora Correção Monetária Selic, IPCA, IGP-M & Juros",
+      "description": "Atualiza dívidas, aluguéis e contratos por índices oficiais + juros de mora 1% a.m. e multa 2% com memória de cálculo.",
+      "price_brl": "R$ 24,90/mês",
+      "zip": "dist/correcao-monetaria-selic-ipca-pro.zip"
+    },
+    {
+      "id": "11",
+      "slug": "clt-pj-simples-fator-r-calc",
+      "name": "Simulador CLT vs PJ & Simples Nacional Fator R (6% vs 15,5%)",
+      "description": "Compara custo total de funcionário CLT vs PJ e calcula pró-labore necessário para atingir 28% do Fator R no Simples Nacional.",
+      "price_brl": "R$ 29,90/mês",
+      "zip": "dist/clt-pj-simples-fator-r-calc.zip"
+    },
+    {
+      "id": "12",
+      "slug": "ecommerce-br-pix-seo-auditor",
+      "name": "Nuvemshop, Tray & VTEX Checkout PIX & SEO Schema Auditor",
+      "description": "Audita lojas virtuais brasileiras: badge de desconto PIX, parcelamento 12x, JSON-LD em BRL e botão flutuante WhatsApp.",
+      "price_brl": "R$ 29,90/mês",
+      "zip": "dist/ecommerce-br-pix-seo-auditor.zip"
+    },
+    {
+      "id": "13",
+      "slug": "infoproduto-roas-split-calc-pro",
+      "name": "Kiwify, Hotmart & Eduzz Calculadora ROAS, Reembolso & Split",
+      "description": "Calcula lucro líquido de infoprodutos descontando taxa da plataforma (8.99%+R$2,49), tráfego Meta/Google Ads, imposto NFS-e e coprodução.",
+      "price_brl": "R$ 34,90/mês",
+      "zip": "dist/infoproduto-roas-split-calc-pro.zip"
+    },
+    {
+      "id": "14",
+      "slug": "nfse-template-autofill-pro",
+      "name": "Portal Nacional NFS-e & Prefeituras Calculador de Retenções",
+      "description": "Calcula automaticamente retenções na fonte (IRRF 1,5%, CSRF 4,65%, ISS 2%-5%, INSS 11%) e gera o texto padrão da discriminação da NFS-e.",
+      "price_brl": "R$ 24,90/mês",
+      "zip": "dist/nfse-template-autofill-pro.zip"
+    },
+    {
+      "id": "15",
+      "slug": "b2b-brasil-ddd-lead-extractor",
+      "name": "Extrator de Contatos B2B Brasil & Normalizador DDD +55",
+      "description": "Extrai telefones, e-mails e CNPJs da página aberta e normaliza celulares brasileiros com 9º dígito (+55DD9XXXXXXXX) para WhatsApp.",
+      "price_brl": "R$ 39,90/mês",
+      "zip": "dist/b2b-brasil-ddd-lead-extractor.zip"
+    }
+  ]
+}

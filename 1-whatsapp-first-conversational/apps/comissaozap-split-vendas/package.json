@@ -1,0 +1,20 @@
+{
+  "name": "@brasil-b2b/comissaozap-split-vendas",
+  "version": "1.0.0",
+  "description": "ComissãoZap Split de Vendedores, Metas & Desconto MDR — Pagar comissão cheia sobre o valor bruto de vendas parceladas em 12x (perdendo 14% de taxa de antecipação). Calcula a comissão líquida após MDR, bônus de meta batida e DSR sobre comissão.",
+  "main": "worker.js",
+  "type": "module",
+  "scripts": {
+    "start": "wrangler dev worker.js",
+    "deploy": "wrangler deploy worker.js"
+  },
+  "keywords": [
+    "whatsapp-first",
+    "brasil",
+    "pix",
+    "b2b",
+    "comissaozap-split-vendas"
+  ],
+  "author": "Ricardo Vieira Forge Cloud (souza@usa.com)",
+  "license": "Commercial"
+}

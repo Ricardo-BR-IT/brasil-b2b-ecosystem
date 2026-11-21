@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Mercado Livre & Shopee Calculadora Margem Rea",
+  "short_name": "Mercado Livr",
+  "version": "1.0.0",
+  "description": "Calcula lucro líquido real na tela do anúncio descontando comissão Clássico/Premium, taxa fixa R$ 6, frete grátis e Simples Nacional",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "clipboardWrite"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Mercado Livre & Shopee Calculadora Margem Real Pro",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}

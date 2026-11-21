@@ -1,0 +1,9 @@
+{
+  "name": "@brasil-ecom-erp/nuvemshop-recuperador-carrinho-whatsapp",
+  "version": "1.0.0",
+  "description": "Dispara mensagem personalizada no WhatsApp 15 minutos após abandono de carrinho ou PIX não pago já com o código Copia-e-Cola.",
+  "main": "index.js",
+  "ecosystem": "Nuvemshop / Yampi",
+  "priceBRL": "R$ 49,90/mês",
+  "author": "Ricardo Vieira Forge Cloud"
+}

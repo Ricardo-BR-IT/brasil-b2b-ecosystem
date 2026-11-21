@@ -1,0 +1,20 @@
+{
+  "name": "@brasil-b2b/fichazap-cnpj-score",
+  "version": "1.0.0",
+  "description": "FichaZap Consulta CNPJ, QSA, CNAE & Risco B2B — Vender faturado no boleto para CNPJ inapto ou recém-aberto com capital de R$ 100. Basta digitar o CNPJ no WhatsApp para validar na Receita/BrasilAPI e gerar a Ficha de Aprovação de Crédito.",
+  "main": "worker.js",
+  "type": "module",
+  "scripts": {
+    "start": "wrangler dev worker.js",
+    "deploy": "wrangler deploy worker.js"
+  },
+  "keywords": [
+    "whatsapp-first",
+    "brasil",
+    "pix",
+    "b2b",
+    "fichazap-cnpj-score"
+  ],
+  "author": "Ricardo Vieira Forge Cloud (souza@usa.com)",
+  "license": "Commercial"
+}

@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Extrator de Contatos B2B Brasil & Normalizado",
+  "short_name": "Extrator de ",
+  "version": "1.0.0",
+  "description": "Extrai telefones, e-mails e CNPJs da página aberta e normaliza celulares brasileiros com 9º dígito (+55DD9XXXXXXXX) para WhatsApp.",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "clipboardWrite"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Extrator de Contatos B2B Brasil & Normalizador DDD +55",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}

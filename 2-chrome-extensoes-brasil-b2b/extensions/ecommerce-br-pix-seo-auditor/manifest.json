@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Nuvemshop, Tray & VTEX Checkout PIX & SEO Sch",
+  "short_name": "Nuvemshop, T",
+  "version": "1.0.0",
+  "description": "Audita lojas virtuais brasileiras: badge de desconto PIX, parcelamento 12x, JSON-LD em BRL e botão flutuante WhatsApp.",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "clipboardWrite"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Nuvemshop, Tray & VTEX Checkout PIX & SEO Schema Auditor",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}

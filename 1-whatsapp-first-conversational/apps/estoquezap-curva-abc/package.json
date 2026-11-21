@@ -1,0 +1,20 @@
+{
+  "name": "@brasil-b2b/estoquezap-curva-abc",
+  "version": "1.0.0",
+  "description": "EstoqueZap Alerta de Ruptura, Curva ABC & Pedido Compra — Falta do produto que mais vende na prateleira e dinheiro parado em item sem giro. Calcula o Ponto de Reposição, classifica a Curva ABC e monta a mensagem de pedido pronta para o fornecedor.",
+  "main": "worker.js",
+  "type": "module",
+  "scripts": {
+    "start": "wrangler dev worker.js",
+    "deploy": "wrangler deploy worker.js"
+  },
+  "keywords": [
+    "whatsapp-first",
+    "brasil",
+    "pix",
+    "b2b",
+    "estoquezap-curva-abc"
+  ],
+  "author": "Ricardo Vieira Forge Cloud (souza@usa.com)",
+  "license": "Commercial"
+}

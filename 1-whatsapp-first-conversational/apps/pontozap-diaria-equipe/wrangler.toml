@@ -1,0 +1,8 @@
+name = "pontozap-diaria-equipe"
+main = "worker.js"
+compatibility_date = "2026-01-01"
+
+[vars]
+APP_NAME = "PontoZap Horas Extras, Adicional Noturno & Recibo Diária"
+TRIGGER_COMMAND = "/ponto"
+PRICE_TIER = "R$ 49,90/mês"

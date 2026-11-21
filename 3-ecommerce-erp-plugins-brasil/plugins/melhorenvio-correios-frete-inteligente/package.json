@@ -1,0 +1,9 @@
+{
+  "name": "@brasil-ecom-erp/melhorenvio-correios-frete-inteligente",
+  "version": "1.0.0",
+  "description": "Garante que o checkout nunca fique fora do ar quando a API dos Correios cai, usando tabela de contingência local por faixa de CEP.",
+  "main": "index.js",
+  "ecosystem": "Nuvemshop / WooCommerce BR",
+  "priceBRL": "R$ 34,90/mês",
+  "author": "Ricardo Vieira Forge Cloud"
+}

@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "PJe & Tribunais Calculadora de Prazos & Dias ",
+  "short_name": "PJe & Tribun",
+  "version": "1.0.0",
+  "description": "Calcula prazos processuais CPC/CLT em dias úteis descontando feriados nacionais e recesso forense dentro do navegador.",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "clipboardWrite"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "PJe & Tribunais Calculadora de Prazos & Dias Úteis BR",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "@brasil-b2b/contratozap-express-lgpd",
+  "version": "1.0.0",
+  "description": "ContratoZap Express Prestação de Serviços & LGPD — Fechar serviço 'de boca' no WhatsApp e levar calote ou sofrer escopo infinito. Gera contrato completo regido pelo Código Civil (Arts. 593-609) + cláusula LGPD + termo de aceite em 5 segundos.",
+  "main": "worker.js",
+  "type": "module",
+  "scripts": {
+    "start": "wrangler dev worker.js",
+    "deploy": "wrangler deploy worker.js"
+  },
+  "keywords": [
+    "whatsapp-first",
+    "brasil",
+    "pix",
+    "b2b",
+    "contratozap-express-lgpd"
+  ],
+  "author": "Ricardo Vieira Forge Cloud (souza@usa.com)",
+  "license": "Commercial"
+}

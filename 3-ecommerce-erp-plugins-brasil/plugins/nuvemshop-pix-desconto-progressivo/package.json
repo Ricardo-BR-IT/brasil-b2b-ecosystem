@@ -1,0 +1,9 @@
+{
+  "name": "@brasil-ecom-erp/nuvemshop-pix-desconto-progressivo",
+  "version": "1.0.0",
+  "description": "Aumenta conversão de checkout oferecendo 5% no PIX acima de R$ 100 e 10% acima de R$ 300 com copy-paste instantâneo.",
+  "main": "index.js",
+  "ecosystem": "Nuvemshop / Tray App Store",
+  "priceBRL": "R$ 39,90/mês",
+  "author": "Ricardo Vieira Forge Cloud"
+}

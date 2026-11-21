@@ -1,0 +1,20 @@
+{
+  "name": "@brasil-b2b/imobzap-sac-price-itbi",
+  "version": "1.0.0",
+  "description": "ImobZap Simulador SAC vs Price, FGTS & Custos de Escritura/ITBI — Comprador desiste na hora da assinatura porque não sabia que precisava de +5% para ITBI, Registro e Avaliação além da entrada. Gera a lâmina comparativa SAC vs Price + custos de cartório pronta para o WhatsApp.",
+  "main": "worker.js",
+  "type": "module",
+  "scripts": {
+    "start": "wrangler dev worker.js",
+    "deploy": "wrangler deploy worker.js"
+  },
+  "keywords": [
+    "whatsapp-first",
+    "brasil",
+    "pix",
+    "b2b",
+    "imobzap-sac-price-itbi"
+  ],
+  "author": "Ricardo Vieira Forge Cloud (souza@usa.com)",
+  "license": "Commercial"
+}

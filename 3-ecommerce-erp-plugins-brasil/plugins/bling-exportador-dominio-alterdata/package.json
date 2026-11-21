@@ -1,0 +1,9 @@
+{
+  "name": "@brasil-ecom-erp/bling-exportador-dominio-alterdata",
+  "version": "1.0.0",
+  "description": "Empacota todos os XMLs de entrada/saída, inutilizações e cancelamentos do mês já no layout de importação do sistema do contador.",
+  "main": "index.js",
+  "ecosystem": "Bling / Contabilidade BR",
+  "priceBRL": "R$ 79,90/mês",
+  "author": "Ricardo Vieira Forge Cloud"
+}

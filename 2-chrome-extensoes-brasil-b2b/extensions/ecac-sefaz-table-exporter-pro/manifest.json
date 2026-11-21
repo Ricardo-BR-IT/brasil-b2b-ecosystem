@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "e-CAC, Sefaz & Gov.br Exportador de Tabelas E",
+  "short_name": "e-CAC, Sefaz",
+  "version": "1.0.0",
+  "description": "Extrai tabelas fiscais paginadas do e-CAC, Sefaz e portais públicos direto para CSV/Excel com moeda BRL e datas DD/MM/AAAA.",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "clipboardWrite"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "e-CAC, Sefaz & Gov.br Exportador de Tabelas Excel Pro",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}

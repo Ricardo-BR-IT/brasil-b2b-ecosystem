@@ -1,0 +1,20 @@
+{
+  "name": "@brasil-b2b/orcazap-pdf-pro",
+  "version": "1.0.0",
+  "description": "OrçaZap PDF Timbrado & PIX Pro — Dono de PME perde vendas porque demora horas para abrir computador e fazer orçamento. No OrçaZap ele manda texto ou áudio no WhatsApp e recebe o PDF timbrado com QR Code PIX em 3 segundos.",
+  "main": "worker.js",
+  "type": "module",
+  "scripts": {
+    "start": "wrangler dev worker.js",
+    "deploy": "wrangler deploy worker.js"
+  },
+  "keywords": [
+    "whatsapp-first",
+    "brasil",
+    "pix",
+    "b2b",
+    "orcazap-pdf-pro"
+  ],
+  "author": "Ricardo Vieira Forge Cloud (souza@usa.com)",
+  "license": "Commercial"
+}

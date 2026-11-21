@@ -1,0 +1,20 @@
+{
+  "name": "@brasil-b2b/notazap-xml-cupom-ocr",
+  "version": "1.0.0",
+  "description": "NotaZap Leitor XML NF-e & Cupom OCR — Digitação manual de notas de compra e perda de XMLs fiscais. O empresário encaminha o XML ou foto do cupom para o WhatsApp e recebe a planilha de entrada com NCM, CFOP, ICMS e vencimentos.",
+  "main": "worker.js",
+  "type": "module",
+  "scripts": {
+    "start": "wrangler dev worker.js",
+    "deploy": "wrangler deploy worker.js"
+  },
+  "keywords": [
+    "whatsapp-first",
+    "brasil",
+    "pix",
+    "b2b",
+    "notazap-xml-cupom-ocr"
+  ],
+  "author": "Ricardo Vieira Forge Cloud (souza@usa.com)",
+  "license": "Commercial"
+}

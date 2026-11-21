@@ -1,0 +1,8 @@
+name = "fichazap-cnpj-score"
+main = "worker.js"
+compatibility_date = "2026-01-01"
+
+[vars]
+APP_NAME = "FichaZap Consulta CNPJ, QSA, CNAE & Risco B2B"
+TRIGGER_COMMAND = "/cnpj"
+PRICE_TIER = "R$ 44,90/mês"

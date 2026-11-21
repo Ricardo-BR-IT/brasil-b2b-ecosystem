@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🇧🇷 Ecossistema B2B Brasil (75 Micro-Sistemas) & Simulador WhatsApp-First Ao Vivo</title>
+  <style>
+    :root {
+      --brand: #10b981;
+      --brand-dark: #059669;
+      --bg: #090d16;
+      --card: #111827;
+      --border: #1f2937;
+      --text: #f8fafc;
+      --muted: #94a3b8;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: var(--bg); color: var(--text); }
+    header { background: linear-gradient(135deg, #064e3b 0%, #0f172a 60%, #1e1b4b 100%); border-bottom: 1px solid var(--border); padding: 28px 24px; }
+    .container { max-width: 1360px; margin: 0 auto; padding: 0 20px; }
+    .kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px; margin-top: 20px; }
+    .kpi { background: rgba(17, 24, 39, 0.85); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 14px 16px; }
+    .kpi .num { font-size: 26px; font-weight: 800; color: #34d399; }
+    .kpi .lbl { font-size: 12px; color: #cbd5e1; margin-top: 4px; }
+    .wl-bar { background: #1e293b; border: 1px solid #334155; border-radius: 12px; padding: 14px 18px; margin: 22px 0; display: flex; flex-wrap: wrap; gap: 12px; align-items: center; justify-content: space-between; }
+    .wl-inputs { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+    .wl-inputs input { background: #0f172a; border: 1px solid #475569; color: #fff; padding: 7px 10px; border-radius: 6px; font-size: 12px; }
+    .zap-grid { display: grid; grid-template-columns: 360px 1fr 380px; gap: 18px; margin-bottom: 32px; }
+    @media (max-width: 1100px) { .zap-grid { grid-template-columns: 1fr; } }
+    .panel { background: var(--card); border: 1px solid var(--border); border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; height: 640px; }
+    .panel-hdr { background: #1e293b; padding: 13px 16px; font-weight: 700; font-size: 14px; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; }
+    .app-list { overflow-y: auto; flex: 1; padding: 8px; }
+    .app-item { padding: 10px 12px; border-radius: 8px; cursor: pointer; border: 1px solid transparent; margin-bottom: 6px; transition: all 0.15s; }
+    .app-item:hover { background: #1e293b; }
+    .app-item.active { background: #064e3b; border-color: #10b981; }
+    .app-item .t { font-weight: 700; font-size: 13px; color: #fff; display: flex; justify-content: space-between; }
+    .app-item .cmd { font-family: monospace; color: #34d399; font-size: 11px; background: rgba(0,0,0,0.35); padding: 2px 6px; border-radius: 4px; }
+    .app-item .s { font-size: 11px; color: #94a3b8; margin-top: 4px; line-height: 1.35; }
+    .chat-window { background: #0b141a; flex: 1; padding: 16px; overflow-y: auto; display: flex; flex-direction: column; gap: 12px; }
+    .bubble { max-width: 88%; padding: 10px 14px; border-radius: 12px; font-size: 13px; line-height: 1.5; white-space: pre-wrap; word-break: break-word; }
+    .bubble.user { align-self: flex-end; background: #005c4b; color: #e9edef; border-bottom-right-radius: 2px; }
+    .bubble.bot { align-self: flex-start; background: #202c33; color: #e9edef; border-bottom-left-radius: 2px; border: 1px solid #2a3942; }
+    .chat-input { background: #202c33; padding: 10px; display: flex; gap: 8px; border-top: 1px solid #2a3942; }
+    .chat-input textarea { flex: 1; height: 52px; background: #2a3942; color: #fff; border: none; border-radius: 8px; padding: 8px 10px; font-size: 12px; resize: none; font-family: inherit; }
+    .chat-input button { background: #00a884; color: #fff; border: none; border-radius: 8px; padding: 0 16px; font-weight: 700; cursor: pointer; font-size: 13px; }
+    .pdf-preview { background: #ffffff; color: #0f172a; flex: 1; padding: 18px; overflow-y: auto; font-size: 12px; }
+    .pdf-hdr { border-bottom: 2px solid #059669; padding-bottom: 10px; margin-bottom: 12px; display: flex; justify-content: space-between; align-items: flex-start; }
+    .pix-box { background: #f0fdf4; border: 1px dashed #16a34a; border-radius: 8px; padding: 10px; margin-top: 12px; font-family: monospace; font-size: 10px; word-break: break-all; color: #065f46; }
+    .tabs { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 16px; }
+    .tab-btn { background: #1e293b; color: #cbd5e1; border: 1px solid #334155; padding: 10px 16px; border-radius: 8px; cursor: pointer; font-weight: 700; font-size: 13px; }
+    .tab-btn.active { background: #10b981; color: #090d16; border-color: #10b981; }
+    .grid-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 14px; margin-bottom: 40px; }
+    .card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 16px; display: flex; flex-direction: column; justify-content: space-between; }
+    .card h3 { margin: 0 0 8px 0; font-size: 15px; color: #38bdf8; }
+    .card p { margin: 0 0 12px 0; font-size: 12px; color: var(--muted); line-height: 1.45; }
+    .card-meta { display: flex; justify-content: space-between; align-items: center; font-size: 11px; border-top: 1px solid var(--border); padding-top: 10px; }
+    .price-pill { background: #064e3b; color: #34d399; padding: 3px 8px; border-radius: 99px; font-weight: 700; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;">
+        <div>
+          <span style="background:#10b981;color:#052e16;padding:4px 10px;border-radius:99px;font-weight:800;font-size:11px;">CTO+ OMNI • ECOSSISTEMA B2B BRASIL</span>
+          <h1 style="margin:8px 0 4px 0;font-size:26px;" id="brandHeadline">Ricardo Vieira Forge Cloud • Central de 75 Micro-Sistemas B2B Brasil</h1>
+          <p style="margin:0;color:#cbd5e1;font-size:14px;">5 Fábricas Nacionais (WhatsApp-First Conversacional, Extensões Chrome BR, E-commerce/ERP Nuvemshop & Bling, Micro-SaaS Local-First PIX e Portal White-Label B2B2B + n8n)</p>
+        </div>
+      </div>
+      <div class="kpis">
+        <div class="kpi"><div class="num">75</div><div class="lbl">Micro-Sistemas B2B Brasil (5 Fábricas)</div></div>
+        <div class="kpi"><div class="num">137</div><div class="lbl">Micro-Sistemas Globais (USD) no Workspace</div></div>
+        <div class="kpi"><div class="num">212</div><div class="lbl">Total Geral da Frota Construída & Empacotada</div></div>
+        <div class="kpi"><div class="num">R$ 0,00</div><div class="lbl">Custo Mensal de Servidor (Serverless & Local-First)</div></div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <!-- B2B2B White-Label Bar -->
+    <div class="wl-bar">
+      <div>
+        <strong style="color:#38bdf8;font-size:13px;">🏢 Modo White-Label B2B2B (Para Contabilidades, Agências & Consultorias — R$ 297 a R$ 997/mês):</strong>
+        <div style="font-size:11px;color:#94a3b8;">Personalize abaixo para rebatizar instantaneamente todos os PDFs timbrados, QR Codes PIX e relatórios:</div>
+      </div>
+      <div class="wl-inputs">
+        <input type="text" id="wlName" value="Ricardo Vieira Forge Cloud" placeholder="Nome da Empresa / Escritório">
+        <input type="text" id="wlPix" value="12.345.678/0001-90" placeholder="Chave PIX (CNPJ/E-mail/Celular)">
+        <input type="text" id="wlCity" value="SAO PAULO" placeholder="Cidade">
+        <button onclick="applyWhiteLabel()" style="background:#38bdf8;color:#0f172a;border:none;padding:7px 12px;border-radius:6px;font-weight:700;cursor:pointer;font-size:12px;">Aplicar Marca</button>
+      </div>
+    </div>
+
+    <!-- PILLAR 1 LIVE SIMULATOR: WHATSAPP-FIRST CONVERSATIONAL APPS -->
+    <h2 style="margin:0 0 10px 0;font-size:18px;color:#34d399;">💬 1. Simulador Interativo Ao Vivo — 15 Aplicativos Conversacionais WhatsApp-First</h2>
+    <p style="margin:0 0 14px 0;font-size:13px;color:#94a3b8;">Selecione qualquer um dos 15 micro-apps na coluna à esquerda, edite os dados da mensagem e clique em <strong>Enviar no WhatsApp</strong> para gerar o cálculo, o <strong>PIX Copia-e-Cola (BRCode Oficial BCB com CRC16)</strong> e o <strong>Documento PDF Timbrado</strong> ao lado:</p>
+
+    <div class="zap-grid">
+      <div class="panel">
+        <div class="panel-hdr"><span>📱 15 Micro-Apps WhatsApp-First</span><span style="font-size:11px;color:#34d399;">Evolution / Cloud API</span></div>
+        <div class="app-list" id="zapAppList"></div>
+      </div>
+
+      <div class="panel">
+        <div class="panel-hdr" style="background:#075e54;">
+          <span id="activeZapTitle">OrçaZap PDF Timbrado & PIX Pro</span>
+          <span style="font-size:11px;background:#128c7e;padding:2px 8px;border-radius:99px;">● Online (Webhook Serverless)</span>
+        </div>
+        <div class="chat-window" id="chatWindow"></div>
+        <div class="chat-input">
+          <textarea id="chatInputBox" placeholder="Digite a mensagem ou comando..."></textarea>
+          <button onclick="sendZapMessage()">Enviar ➤</button>
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="panel-hdr">
+          <span>📄 Documento Timbrado & PIX Gerado</span>
+          <button onclick="window.print()" style="background:#2563eb;color:#fff;border:none;padding:4px 10px;border-radius:6px;font-size:11px;cursor:pointer;font-weight:700;">🖨️ Imprimir / Salvar PDF</button>
+        </div>
+        <div class="pdf-preview" id="pdfPreview"></div>
+      </div>
+    </div>
+
+    <!-- CATALOG OF ALL 5 BRAZILIAN PILLARS -->
+    <h2 style="margin:10px 0 12px 0;font-size:18px;color:#38bdf8;">🗂️ Catálogo Completo das 5 Fábricas B2B Brasil (75 Softwares & Pacotes `.zip`)</h2>
+    <div class="tabs">
+      <button class="tab-btn active" onclick="renderTab('p1', this)">1. WhatsApp-First (15)</button>
+      <button class="tab-btn" onclick="renderTab('p2', this)">2. Extensões Chrome BR (15)</button>
+      <button class="tab-btn" onclick="renderTab('p3', this)">3. Plugins E-com & ERP BR (15)</button>
+      <button class="tab-btn" onclick="renderTab('p4', this)">4. Micro-SaaS Local-First PIX (15)</button>
+      <button class="tab-btn" onclick="renderTab('p5', this)">5. White-Label & Packs n8n (15)</button>
+    </div>
+    <div class="grid-cards" id="catalogGrid"></div>
+  </div>
+
+  <script>
+    const DATA = {
+      p1: [{"id": "01", "slug": "orcazap-pdf-pro", "name": "OrçaZap PDF Timbrado & PIX Pro", "trigger": "/orcamento", "price_brl": "R$ 49,90/mês", "target_audience": "Prestadores de serviço, oficinas, clínicas, técnicos de refrigeração, eletricistas e gráficas", "pain_solved": "Dono de PME perde vendas porque demora horas para abrir computador e fazer orçamento. No OrçaZap ele manda texto ou áudio no WhatsApp e recebe o PDF timbrado com QR Code PIX em 3 segundos.", "sample_input": "Cliente: Clínica Sorriso | 3x Limpeza Ar Split 12000 BTUs R$ 180 | 1x Carga de Gás R$ 220 | Desconto PIX: 10% | Chave PIX: 12.345.678/0001-90", "category": "Vendas & Orçamentos"}, {"id": "02", "slug": "notazap-xml-cupom-ocr", "name": "NotaZap Leitor XML NF-e & Cupom OCR", "trigger": "/nota", "price_brl": "R$ 59,90/mês", "target_audience": "Comércio varejista, restaurantes, mercados e escritórios contábeis", "pain_solved": "Digitação manual de notas de compra e perda de XMLs fiscais. O empresário encaminha o XML ou foto do cupom para o WhatsApp e recebe a planilha de entrada com NCM, CFOP, ICMS e vencimentos.", "sample_input": "Fornecedor: Distribuidora Brasil LTDA | CNPJ: 11.222.333/0001-81 | NF-e: 000458921 | CFOP: 5102 | NCM: 8471.30.12 | Valor Total: R$ 4.850,00 | ICMS: 18%", "category": "Fiscal & Contábil"}, {"id": "03", "slug": "caixazap-dre-fluxo", "name": "CaixaZap Fechamento Diário & Mini-DRE", "trigger": "/caixa", "price_brl": "R$ 39,90/mês", "target_audience": "Lojas de rua, salões de beleza, barbearias, lanchonetes e MEIs", "pain_solved": "Empresário não sabe se teve lucro no mês porque não alimenta ERP. No CaixaZap ele manda 'vendi 650 pix, paguei 180 fornecedor' no chat e recebe o DRE com Margem Líquida e Ponto de Equilíbrio.", "sample_input": "+1450.00 Vendas PIX | +980.00 Vendas Cartão | -620.00 Reposição Estoque | -180.00 Energia Elétrica | -95.00 Internet | -120.00 Taxas Maquininha", "category": "Gestão Financeira"}, {"id": "04", "slug": "cobrazap-pix-regua", "name": "CobraZap PIX EMV & Régua Anti-Calote", "trigger": "/cobrar", "price_brl": "R$ 49,90/mês", "target_audience": "Escolas, academias, contabilidades, locadoras e prestadores recorrentes", "pain_solved": "Constrangimento ao cobrar clientes inadimplentes no WhatsApp. Gera o código PIX Copia-e-Cola com multa/juros (2% + 1% a.m.) e a régua completa de 4 mensagens amigáveis dentro da lei (Art. 42 CDC).", "sample_input": "Devedor: Marcos Oliveira | Valor Original: R$ 850,00 | Dias em Atraso: 18 | Multa: 2% | Juros Mensal: 1% | Chave PIX: financeiro@empresa.com.br", "category": "Cobrança & Recebíveis"}, {"id": "05", "slug": "vistoriazap-laudo-os", "name": "VistoriaZap Laudo Técnico & Ordem de Serviço PDF", "trigger": "/vistoria", "price_brl": "R$ 69,90/mês", "target_audience": "Imobiliárias, assistência técnica, energia solar, dedetizadoras e engenheiros", "pain_solved": "Vistorias feitas no papel ou perdidas em mensagens soltas. O técnico preenche o checklist no chat e gera um Laudo/OS oficial numerado com hash SHA-256 de integridade jurídica e garantia.", "sample_input": "Local: Apto 402 Ed. Horizonte | Técnico: Carlos Mendes | Itens OK: Pintura, Hidráulica, Quadro Elétrico | Pendências: Trinca vidro varanda, Fechadura porta serviço | Garantia: 90 dias", "category": "Operações de Campo"}, {"id": "06", "slug": "fichazap-cnpj-score", "name": "FichaZap Consulta CNPJ, QSA, CNAE & Risco B2B", "trigger": "/cnpj", "price_brl": "R$ 44,90/mês", "target_audience": "Atacadistas, distribuidoras, representantes comerciais e analistas de crédito", "pain_solved": "Vender faturado no boleto para CNPJ inapto ou recém-aberto com capital de R$ 100. Basta digitar o CNPJ no WhatsApp para validar na Receita/BrasilAPI e gerar a Ficha de Aprovação de Crédito.", "sample_input": "33.000.167/0001-01 | Limite Solicitado: R$ 15.000,00 | Prazo Boleto: 28/56 dias", "category": "Crédito & Compliance"}, {"id": "07", "slug": "contratozap-express-lgpd", "name": "ContratoZap Express Prestação de Serviços & LGPD", "trigger": "/contrato", "price_brl": "R$ 54,90/mês", "target_audience": "Agências de marketing, freelancers, fotógrafos, arquitetos e consultores", "pain_solved": "Fechar serviço 'de boca' no WhatsApp e levar calote ou sofrer escopo infinito. Gera contrato completo regido pelo Código Civil (Arts. 593-609) + cláusula LGPD + termo de aceite em 5 segundos.", "sample_input": "Contratante: Padaria Pão Dourado LTDA (14.555.888/0001-22) | Serviço: Gestão de Tráfego Pago e Redes Sociais | Valor: R$ 1.800,00/mês | Prazo: 6 meses | Foro: São Paulo/SP", "category": "Jurídico & Contratos"}, {"id": "08", "slug": "pontozap-diaria-equipe", "name": "PontoZap Horas Extras, Adicional Noturno & Recibo Diária", "trigger": "/ponto", "price_brl": "R$ 49,90/mês", "target_audience": "Construtoras, empreiteiros, eventos, restaurantes e limpeza terceirizada", "pain_solved": "Processos trabalhistas por falta de recibo de diária e cálculo errado de hora extra 50%/100% e DSR. Calcula os encargos exatos no chat e emite o recibo pronto para assinatura.", "sample_input": "Colaborador: João Batista | Salário Base: R$ 2.420,00 | Horas Extras 50%: 14h | Horas Extras 100%: 6h | Adicional Noturno: 18h | Diárias Extras: 2 x R$ 150,00", "category": "RH & Departamento Pessoal"}, {"id": "09", "slug": "estoquezap-curva-abc", "name": "EstoqueZap Alerta de Ruptura, Curva ABC & Pedido Compra", "trigger": "/estoque", "price_brl": "R$ 59,90/mês", "target_audience": "Autopeças, materiais de construção, depósitos de bebidas e papelarias", "pain_solved": "Falta do produto que mais vende na prateleira e dinheiro parado em item sem giro. Calcula o Ponto de Reposição, classifica a Curva ABC e monta a mensagem de pedido pronta para o fornecedor.", "sample_input": "Cimento CP-II 50kg: Estoque=18, Min=50, Custo=R$ 31,00, Giro=220/mês | Argamassa AC-III: Estoque=12, Min=30, Custo=R$ 24,50, Giro=95/mês | Tinta Acrílica 18L: Estoque=25, Min=15, Custo=R$ 189,00, Giro=40/mês", "category": "Estoque & Compras"}, {"id": "10", "slug": "fretezap-correios-cubagem", "name": "FreteZap Cubagem Aérea/Rodoviária, PAC/Sedex & Difal", "trigger": "/frete", "price_brl": "R$ 39,90/mês", "target_audience": "Vendedores de WhatsApp, atacadistas do Brás/Bom Retiro e distribuidoras", "pain_solved": "Prejuízo no frete por esquecer o peso cubado (C x L x A / 6000) em caixas volumosas. Calcula peso taxável real, comparativo Transportadora vs Sedex/PAC e seguro Ad Valorem/GRIS.", "sample_input": "Origem: 01001-000 | Destino: 70040-010 | Caixa: 60x45x40 cm | Peso Real: 8.5 kg | Valor NF: R$ 2.400,00", "category": "Logística & Frete"}, {"id": "11", "slug": "precificazap-ifood-markup", "name": "PrecificaZap Ficha Técnica, CMV, Taxa iFood & Maquininha", "trigger": "/preco", "price_brl": "R$ 49,90/mês", "target_audience": "Restaurantes, hamburguerias, pizzarias, confeitarias e lojistas", "pain_solved": "Restaurante vende muito no iFood mas fecha no vermelho porque multiplicou o custo por 2 sem somar 27,2% do iFood + 6% imposto + embalagem. Calcula o preço de cardápio no balcão e no app com lucro líquido garantido.", "sample_input": "Produto: Combo Smash Duplo + Fritas | Custo Insumos: R$ 14,20 | Embalagem: R$ 2,60 | Taxa iFood Entrega Parceira: 26.2% | Taxa Maquininha Balcão: 3.49% | Imposto Simples: 4.5% | Lucro Líquido Alvo: 20%", "category": "Food Service & Precificação"}, {"id": "12", "slug": "agendazap-antisnooze-pix", "name": "AgendaZap Confirmação Anti-Falta & Sinal PIX 30%", "trigger": "/agenda", "price_brl": "R$ 44,90/mês", "target_audience": "Dentistas, psicólogos, clínicas de estética, tatuadores e barbearias", "pain_solved": "30% dos clientes marcam horário e não aparecem (no-show). Gera o voucher de agendamento com cobrança automática de 30% de sinal via PIX Copia-e-Cola e termos de remarcação.", "sample_input": "Paciente: Juliana Costa | Procedimento: Harmonização / Limpeza Profunda | Data: 25/11/2026 às 14:30 | Valor Total: R$ 450,00 | Sinal Reserva: 30% | PIX: clinica@estetica.com.br", "category": "Saúde & Agendamentos"}, {"id": "13", "slug": "comissaozap-split-vendas", "name": "ComissãoZap Split de Vendedores, Metas & Desconto MDR", "trigger": "/comissao", "price_brl": "R$ 49,90/mês", "target_audience": "Lojas de móveis, concessionárias, clínicas odontológicas e infoprodutores", "pain_solved": "Pagar comissão cheia sobre o valor bruto de vendas parceladas em 12x (perdendo 14% de taxa de antecipação). Calcula a comissão líquida após MDR, bônus de meta batida e DSR sobre comissão.", "sample_input": "Vendedor: Rafael Almeida | Vendas PIX/Vista: R$ 28.000 | Vendas Cartão 10x: R$ 42.000 (Taxa Antecipação 11.8%) | Meta Mensal: R$ 60.000 | Comissão Base: 4% | Bônus Supermeta: +1.5%", "category": "Comercial & Vendas"}, {"id": "14", "slug": "licitazap-pncp-radar", "name": "LicitaZap Calculadora de Lance Mínimo & Inexequibilidade (Lei 14.133)", "trigger": "/licitacao", "price_brl": "R$ 89,90/mês", "target_audience": "Fornecedores do governo, construtoras e empresas participantes de pregões eletrônicos", "pain_solved": "Mergulhar no preço durante a disputa do Pregão Eletrônico (Compras.gov / PNCP) e tomar prejuízo ou ter a proposta desclassificada por inexequibilidade (Art. 59 §4º Lei 14.133/2021 - 75% em obras).", "sample_input": "Órgão: Prefeitura Municipal | Valor Estimado Edital: R$ 480.000,00 | Custo Direto Total: R$ 295.000,00 | Impostos + BDI Mínimo: 16.5% | Tipo: Obra/Serviço de Engenharia", "category": "Setor Público & Licitações"}, {"id": "15", "slug": "imobzap-sac-price-itbi", "name": "ImobZap Simulador SAC vs Price, FGTS & Custos de Escritura/ITBI", "trigger": "/imovel", "price_brl": "R$ 59,90/mês", "target_audience": "Corretores de imóveis, imobiliárias e correspondentes bancários Caixa/Bancos", "pain_solved": "Comprador desiste na hora da assinatura porque não sabia que precisava de +5% para ITBI, Registro e Avaliação além da entrada. Gera a lâmina comparativa SAC vs Price + custos de cartório pronta para o WhatsApp.", "sample_input": "Imóvel: R$ 650.000,00 | Entrada + FGTS: R$ 150.000,00 | Prazo: 360 meses | Taxa Juros Anual: 9.85% a.a. | Alíquota ITBI Município: 3.0%", "category": "Mercado Imobiliário"}],
+      p2: [{"id": "01", "slug": "ml-shopee-margem-liquida-pro", "name": "Mercado Livre & Shopee Calculadora Margem Real Pro", "description": "Calcula lucro líquido real na tela do anúncio descontando comissão Clássico/Premium, taxa fixa R$ 6, frete grátis e Simples Nacional.", "price_brl": "R$ 29,90/mês", "zip": "dist/ml-shopee-margem-liquida-pro.zip"}, {"id": "02", "slug": "whatsapp-crm-kanban-lgpd-pro", "name": "WhatsApp Web CRM Kanban & LGPD Privacy Blur Pro", "description": "Organiza conversas em colunas Kanban locais (IndexedDB) e desfoca nomes/mensagens sensíveis (LGPD) em 1 clique.", "price_brl": "R$ 34,90/mês", "zip": "dist/whatsapp-crm-kanban-lgpd-pro.zip"}, {"id": "03", "slug": "ecac-sefaz-table-exporter-pro", "name": "e-CAC, Sefaz & Gov.br Exportador de Tabelas Excel Pro", "description": "Extrai tabelas fiscais paginadas do e-CAC, Sefaz e portais públicos direto para CSV/Excel com moeda BRL e datas DD/MM/AAAA.", "price_brl": "R$ 39,90/mês", "zip": "dist/ecac-sefaz-table-exporter-pro.zip"}, {"id": "04", "slug": "pje-prazos-feriados-calc-pro", "name": "PJe & Tribunais Calculadora de Prazos & Dias Úteis BR", "description": "Calcula prazos processuais CPC/CLT em dias úteis descontando feriados nacionais e recesso forense dentro do navegador.", "price_brl": "R$ 29,90/mês", "zip": "dist/pje-prazos-feriados-calc-pro.zip"}, {"id": "05", "slug": "cnpj-cep-autofill-validator-pro", "name": "CNPJ, CPF, IE & CEP Validador e Autopreenchimento BR", "description": "Valida dígitos verificadores de CPF/CNPJ, consulta Receita/BrasilAPI e ViaCEP e limpa pontuação para colar em ERPs.", "price_brl": "R$ 19,90/mês", "zip": "dist/cnpj-cep-autofill-validator-pro.zip"}, {"id": "06", "slug": "ifood-cardapio-cmv-auditor-pro", "name": "iFood & Delivery Auditor de Cardápio, CMV e Taxas Pro", "description": "Audita margem líquida prato a prato no Portal do Parceiro iFood considerando plano Básico/Entrega, taxa online 3.2% e embalagem.", "price_brl": "R$ 34,90/mês", "zip": "dist/ifood-cardapio-cmv-auditor-pro.zip"}, {"id": "07", "slug": "nfe-xml-danfe-inspector-pro", "name": "XML NF-e, NFC-e & DANFE Auditor Fiscal In-Browser", "description": "Inspeciona XML de NF-e no navegador: CFOP, NCM, CEST, ICMS-ST, DIFAL, PIS/COFINS e chave de 44 dígitos sem enviar para servidor.", "price_brl": "R$ 39,90/mês", "zip": "dist/nfe-xml-danfe-inspector-pro.zip"}, {"id": "08", "slug": "pix-brcode-qrcode-generator-pro", "name": "Gerador PIX Copia-e-Cola (BRCode BCB) & Cobrança 1-Click", "description": "Gera código PIX EMV oficial do Banco Central com valor exato, TXID, CRC16 e link direto para WhatsApp.", "price_brl": "R$ 19,90/mês", "zip": "dist/pix-brcode-qrcode-generator-pro.zip"}, {"id": "09", "slug": "bling-tiny-conciliador-marketplace", "name": "Bling & Tiny ERP Conciliador de Repasses Marketplace", "description": "Cruza o valor do pedido no Bling/Tiny com o repasse líquido do Mercado Livre, Shopee e Amazon BR para achar diferenças.", "price_brl": "R$ 44,90/mês", "zip": "dist/bling-tiny-conciliador-marketplace.zip"}, {"id": "10", "slug": "correcao-monetaria-selic-ipca-pro", "name": "Calculadora Correção Monetária Selic, IPCA, IGP-M & Juros", "description": "Atualiza dívidas, aluguéis e contratos por índices oficiais + juros de mora 1% a.m. e multa 2% com memória de cálculo.", "price_brl": "R$ 24,90/mês", "zip": "dist/correcao-monetaria-selic-ipca-pro.zip"}, {"id": "11", "slug": "clt-pj-simples-fator-r-calc", "name": "Simulador CLT vs PJ & Simples Nacional Fator R (6% vs 15,5%)", "description": "Compara custo total de funcionário CLT vs PJ e calcula pró-labore necessário para atingir 28% do Fator R no Simples Nacional.", "price_brl": "R$ 29,90/mês", "zip": "dist/clt-pj-simples-fator-r-calc.zip"}, {"id": "12", "slug": "ecommerce-br-pix-seo-auditor", "name": "Nuvemshop, Tray & VTEX Checkout PIX & SEO Schema Auditor", "description": "Audita lojas virtuais brasileiras: badge de desconto PIX, parcelamento 12x, JSON-LD em BRL e botão flutuante WhatsApp.", "price_brl": "R$ 29,90/mês", "zip": "dist/ecommerce-br-pix-seo-auditor.zip"}, {"id": "13", "slug": "infoproduto-roas-split-calc-pro", "name": "Kiwify, Hotmart & Eduzz Calculadora ROAS, Reembolso & Split", "description": "Calcula lucro líquido de infoprodutos descontando taxa da plataforma (8.99%+R$2,49), tráfego Meta/Google Ads, imposto NFS-e e coprodução.", "price_brl": "R$ 34,90/mês", "zip": "dist/infoproduto-roas-split-calc-pro.zip"}, {"id": "14", "slug": "nfse-template-autofill-pro", "name": "Portal Nacional NFS-e & Prefeituras Calculador de Retenções", "description": "Calcula automaticamente retenções na fonte (IRRF 1,5%, CSRF 4,65%, ISS 2%-5%, INSS 11%) e gera o texto padrão da discriminação da NFS-e.", "price_brl": "R$ 24,90/mês", "zip": "dist/nfse-template-autofill-pro.zip"}, {"id": "15", "slug": "b2b-brasil-ddd-lead-extractor", "name": "Extrator de Contatos B2B Brasil & Normalizador DDD +55", "description": "Extrai telefones, e-mails e CNPJs da página aberta e normaliza celulares brasileiros com 9º dígito (+55DD9XXXXXXXX) para WhatsApp.", "price_brl": "R$ 39,90/mês", "zip": "dist/b2b-brasil-ddd-lead-extractor.zip"}],
+      p3: [{"id": "01", "slug": "nuvemshop-pix-desconto-progressivo", "name": "Nuvemshop & Tray PIX Desconto Progressivo & QR Instantâneo", "ecosystem": "Nuvemshop / Tray App Store", "price_brl": "R$ 39,90/mês", "description": "Aumenta conversão de checkout oferecendo 5% no PIX acima de R$ 100 e 10% acima de R$ 300 com copy-paste instantâneo.", "zip": "dist/nuvemshop-pix-desconto-progressivo.zip"}, {"id": "02", "slug": "bling-conciliador-ml-shopee-amazon", "name": "Bling ERP Auditor de Taxas e Repasses Mercado Livre & Shopee", "ecosystem": "Bling Loja de Extensões", "price_brl": "R$ 59,90/mês", "description": "Audita automaticamente cada pedido importado no Bling contra a comissão e frete descontados pelos marketplaces.", "zip": "dist/bling-conciliador-ml-shopee-amazon.zip"}, {"id": "03", "slug": "tiny-etiqueta-termica-zpl-danfe", "name": "Tiny ERP & Olist Unificador de Etiqueta ZPL + DANFE Simplificada", "ecosystem": "Tiny / Olist Ecossistema", "price_brl": "R$ 49,90/mês", "description": "Imprime etiqueta de envio 100x150mm (ZPL/PDF) já com a DANFE Simplificada e lista de separação (Picking List) na mesma folha.", "zip": "dist/tiny-etiqueta-termica-zpl-danfe.zip"}, {"id": "04", "slug": "wc-brasil-cpf-cnpj-cep-checkout", "name": "WooCommerce Brasil Checkout Transparente CPF/CNPJ, IE & ViaCEP", "ecosystem": "WordPress / WooCommerce BR", "price_brl": "R$ 29,90/mês", "description": "Adiciona máscara e validação real de CPF/CNPJ/Inscrição Estadual e preenchimento automático de endereço via CEP sem pesar o checkout.", "zip": "dist/wc-brasil-cpf-cnpj-cep-checkout.zip"}, {"id": "05", "slug": "nuvemshop-recuperador-carrinho-whatsapp", "name": "Nuvemshop & Yampi Recuperador de Carrinho e PIX Expirado via WhatsApp", "ecosystem": "Nuvemshop / Yampi", "price_brl": "R$ 49,90/mês", "description": "Dispara mensagem personalizada no WhatsApp 15 minutos após abandono de carrinho ou PIX não pago já com o código Copia-e-Cola.", "zip": "dist/nuvemshop-recuperador-carrinho-whatsapp.zip"}, {"id": "06", "slug": "bling-tiny-auditor-ncm-cfop-cest", "name": "Bling & Tiny Validador Fiscal Preventivo NCM, CEST, CFOP & CSOSN", "ecosystem": "Bling / Tiny ERP", "price_brl": "R$ 54,90/mês", "description": "Evita rejeição da Sefaz na Black Friday auditando todo o catálogo de produtos em busca de NCM extinto ou CFOP incompatível.", "zip": "dist/bling-tiny-auditor-ncm-cfop-cest.zip"}, {"id": "07", "slug": "vtex-tray-compre-junto-kit-leve", "name": "VTEX & Tray Kit Compre Junto & Order Bump Ultra-Leve (<4KB)", "ecosystem": "VTEX / Tray App Store", "price_brl": "R$ 69,90/mês", "description": "Aumenta o Ticket Médio (AOV) em 18% montando kits com desconto progressivo sem prejudicar o Core Web Vitals da loja.", "zip": "dist/vtex-tray-compre-junto-kit-leve.zip"}, {"id": "08", "slug": "omie-contaazul-cobranca-whatsapp-asaas", "name": "Omie & Conta Azul Régua de Cobrança PIX/Boleto via WhatsApp", "ecosystem": "Omie.Store / Conta Azul", "price_brl": "R$ 64,90/mês", "description": "Sincroniza contas a receber vencendo/vencidas no ERP e envia 2ª via de Boleto e PIX automaticamente no WhatsApp do cliente.", "zip": "dist/omie-contaazul-cobranca-whatsapp-asaas.zip"}, {"id": "09", "slug": "melhorenvio-correios-frete-inteligente", "name": "Calculadora de Frete Contingência Correios, Jadlog & Melhor Envio", "ecosystem": "Nuvemshop / WooCommerce BR", "price_brl": "R$ 34,90/mês", "description": "Garante que o checkout nunca fique fora do ar quando a API dos Correios cai, usando tabela de contingência local por faixa de CEP.", "zip": "dist/melhorenvio-correios-frete-inteligente.zip"}, {"id": "10", "slug": "bling-exportador-dominio-alterdata", "name": "Bling & Tiny Exportador Contábil SPED / Domínio / Alterdata / Fortes", "ecosystem": "Bling / Contabilidade BR", "price_brl": "R$ 79,90/mês", "description": "Empacota todos os XMLs de entrada/saída, inutilizações e cancelamentos do mês já no layout de importação do sistema do contador.", "zip": "dist/bling-exportador-dominio-alterdata.zip"}, {"id": "11", "slug": "wc-brasil-b2b-atacado-cnpj-minimo", "name": "WooCommerce Brasil Atacado B2B: Preço por CNPJ e Pedido Mínimo", "ecosystem": "WooCommerce B2B Brasil", "price_brl": "R$ 49,90/mês", "description": "Libera tabela de preço de atacado somente para CNPJ ativo na Receita Federal e exige pedido mínimo por grade/caixa fechada.", "zip": "dist/wc-brasil-b2b-atacado-cnpj-minimo.zip"}, {"id": "12", "slug": "nuvemshop-trocas-devolucoes-cdc", "name": "Portal de Trocas, Devoluções (7 Dias CDC) e Logística Reversa BR", "ecosystem": "Nuvemshop / Tray / Shopify BR", "price_brl": "R$ 59,90/mês", "description": "Automatiza solicitações de troca dentro do prazo de 7 dias do Código de Defesa do Consumidor gerando vale-compras para reter a receita.", "zip": "dist/nuvemshop-trocas-devolucoes-cdc.zip"}, {"id": "13", "slug": "ifood-anotaai-sincronizador-estoque-erp", "name": "Sincronizador de Estoque e CMV: iFood / Delivery ↔ Bling & Tiny", "ecosystem": "Food Service & ERP BR", "price_brl": "R$ 69,90/mês", "description": "Dá baixa automática de insumos no ERP a cada pedido concluído no delivery e pausa o item no cardápio se o estoque zerar.", "zip": "dist/ifood-anotaai-sincronizador-estoque-erp.zip"}, {"id": "14", "slug": "asaas-kiwify-emissor-nfse-split", "name": "Orquestrador de Split de Nota Fiscal (NFS-e Produto vs Serviço)", "ecosystem": "Infoprodutos & SaaS BR", "price_brl": "R$ 79,90/mês", "description": "Divide automaticamente a emissão de NF-e (e-book/livro imune de imposto) e NFS-e (mentoria/curso) após pagamento aprovado.", "zip": "dist/asaas-kiwify-emissor-nfse-split.zip"}, {"id": "15", "slug": "vtex-nuvemshop-cashback-pix-fidelidade", "name": "Motor de Cashback Instantâneo & Carteira de Fidelidade para Varejo BR", "ecosystem": "E-commerce Nacional", "price_brl": "R$ 49,90/mês", "description": "Concede crédito automático de 5% a 15% para a próxima compra com alerta de expiração via WhatsApp em 30 dias.", "zip": "dist/vtex-nuvemshop-cashback-pix-fidelidade.zip"}],
+      p4: [{"id": "01", "slug": "conversor-xml-nfe-para-excel", "name": "Conversor em Lote de XML NF-e / NFC-e para Excel e CSV Contábil", "seo_keyword": "converter xml nfe para excel gratis online", "price_brl": "R$ 29,90/mês ou R$ 97 Vitalício no PIX", "path": "apps/conversor-xml-nfe-para-excel/index.html"}, {"id": "02", "slug": "gerador-danfe-etiqueta-termica", "name": "Gerador de DANFE Simplificada + Etiqueta Térmica 100x150mm no Navegador", "seo_keyword": "gerador danfe simplificada etiqueta 100x150 gratis", "price_brl": "R$ 29,90/mês ou R$ 97 Vitalício no PIX", "path": "apps/gerador-danfe-etiqueta-termica/index.html"}, {"id": "03", "slug": "conversor-extrato-ofx-pdf-csv", "name": "Conversor de Extrato Bancário OFX e PDF (Itaú/Bradesco/Nubank/Inter) para Excel", "seo_keyword": "converter extrato ofx pdf para excel conciliacao", "price_brl": "R$ 34,90/mês ou R$ 119 Vitalício no PIX", "path": "apps/conversor-extrato-ofx-pdf-csv/index.html"}, {"id": "04", "slug": "simulador-reforma-tributaria-ibs-cbs", "name": "Simulador da Reforma Tributária (CBS + IBS 2026-2033) para Empresas Brasileiras", "seo_keyword": "calculadora reforma tributaria ibs cbs simples nacional", "price_brl": "R$ 49,90/mês ou R$ 147 Vitalício no PIX", "path": "apps/simulador-reforma-tributaria-ibs-cbs/index.html"}, {"id": "05", "slug": "gerador-orcamento-os-pdf-pwa", "name": "PWA Offline-First Gerador de Orçamento, Recibo e Ordem de Serviço em PDF", "seo_keyword": "gerador orcamento e ordem de servico pdf online", "price_brl": "R$ 24,90/mês ou R$ 89 Vitalício no PIX", "path": "apps/gerador-orcamento-os-pdf-pwa/index.html"}, {"id": "06", "slug": "calculadora-rescisao-clt-ferias", "name": "Calculadora Completa de Rescisão Trabalhista CLT, Férias, 13º e Multa 40% FGTS", "seo_keyword": "calculadora rescisao trabalhista exata com memoria de calculo", "price_brl": "R$ 19,90/mês ou R$ 67 Vitalício no PIX", "path": "apps/calculadora-rescisao-clt-ferias/index.html"}, {"id": "07", "slug": "auditor-fator-r-simples-nacional", "name": "Planejador Tributário Simples Nacional: Otimizador do Fator R (Anexo III vs V)", "seo_keyword": "calculadora fator r simples nacional 28 por cento", "price_brl": "R$ 39,90/mês ou R$ 127 Vitalício no PIX", "path": "apps/auditor-fator-r-simples-nacional/index.html"}, {"id": "08", "slug": "gerador-contrato-aluguel-servico", "name": "Gerador Jurídico de Contrato de Locação (Lei 8.245) e Prestação de Serviços PDF", "seo_keyword": "gerador contrato prestacao servicos e aluguel pdf", "price_brl": "R$ 29,90/mês ou R$ 97 Vitalício no PIX", "path": "apps/gerador-contrato-aluguel-servico/index.html"}, {"id": "09", "slug": "calculadora-difal-icms-st-mva", "name": "Calculadora Fiscal de ICMS-ST, MVA Ajustada e DIFAL Interestadual por UF", "seo_keyword": "calculadora icms st mva ajustada e difal online", "price_brl": "R$ 39,90/mês ou R$ 127 Vitalício no PIX", "path": "apps/calculadora-difal-icms-st-mva/index.html"}, {"id": "10", "slug": "higienizador-planilha-whatsapp-ddd", "name": "Higienizador de Planilhas de Contatos: Padronizador DDD +55, 9º Dígito e Deduplicação", "seo_keyword": "formatar lista de telefones para whatsapp 9 digito excel", "price_brl": "R$ 29,90/mês ou R$ 97 Vitalício no PIX", "path": "apps/higienizador-planilha-whatsapp-ddd/index.html"}, {"id": "11", "slug": "precificador-cardapio-ficha-tecnica", "name": "Gerador de Ficha Técnica Operacional (FTO) e Precificação de Cardápio para Restaurantes", "seo_keyword": "planilha ficha tecnica restaurante e calculo cmv online", "price_brl": "R$ 34,90/mês ou R$ 119 Vitalício no PIX", "path": "apps/precificador-cardapio-ficha-tecnica/index.html"}, {"id": "12", "slug": "validador-lote-cnpj-situacao-cadastral", "name": "Consultor e Validador em Lote de CNPJs (QSA, CNAE, CEP e Situação Cadastral)", "seo_keyword": "consulta cnpj em lote para excel gratis", "price_brl": "R$ 39,90/mês ou R$ 127 Vitalício no PIX", "path": "apps/validador-lote-cnpj-situacao-cadastral/index.html"}, {"id": "13", "slug": "gerador-placa-qrcode-pix-estatico", "name": "Estúdio Gerador de Plaquinha QR Code PIX Imprimível + BRCode Banco Central", "seo_keyword": "criar placa qr code pix para imprimir pdf", "price_brl": "R$ 19,90/mês ou R$ 59 Vitalício no PIX", "path": "apps/gerador-placa-qrcode-pix-estatico/index.html"}, {"id": "14", "slug": "calculadora-juros-financiamento-sac-price", "name": "Auditor de Contratos Bancários: Simulador SAC vs Price e Taxa Efetiva CET", "seo_keyword": "simulador amortizacao sac price e juros abusivos", "price_brl": "R$ 29,90/mês ou R$ 97 Vitalício no PIX", "path": "apps/calculadora-juros-financiamento-sac-price/index.html"}, {"id": "15", "slug": "anonimizador-documentos-lgpd-pdf", "name": "Anonimizador e Mascarador de CPF, RG, CNPJ e Dados Pessoais (LGPD) em Textos e CSV", "seo_keyword": "anonimizar cpf e dados pessoais lgpd documento", "price_brl": "R$ 34,90/mês ou R$ 119 Vitalício no PIX", "path": "apps/anonimizador-documentos-lgpd-pdf/index.html"}],
+      p5: [{"id": "01", "slug": "n8n-evolution-orcamento-pdf-pix", "name": "WhatsApp (Evolution API) → Orçamento PDF Timbrado + Cobrança PIX Asaas", "price_b2b2b": "R$ 297 a R$ 997/mês (White-Label)", "workflow_file": "workflows/n8n-evolution-orcamento-pdf-pix.json"}, {"id": "02", "slug": "n8n-asaas-regua-cobranca-whatsapp", "name": "Régua Anti-Inadimplência Asaas (D-2, Dia D, D+3, D+7) → WhatsApp c/ PIX Copia-e-Cola", "price_b2b2b": "R$ 297 a R$ 997/mês (White-Label)", "workflow_file": "workflows/n8n-asaas-regua-cobranca-whatsapp.json"}, {"id": "03", "slug": "n8n-bling-nfe-whatsapp-rastreio", "name": "Bling ERP NF-e Emitida → Envio Automático do PDF DANFE + Link Rastreio no WhatsApp", "price_b2b2b": "R$ 297 a R$ 997/mês (White-Label)", "workflow_file": "workflows/n8n-bling-nfe-whatsapp-rastreio.json"}, {"id": "04", "slug": "n8n-xml-nfe-contabilidade-gdrive", "name": "Coletor de XML NF-e via WhatsApp/E-mail → Validação Fiscal + Pasta do Contador no Drive", "price_b2b2b": "R$ 297 a R$ 997/mês (White-Label)", "workflow_file": "workflows/n8n-xml-nfe-contabilidade-gdrive.json"}, {"id": "05", "slug": "n8n-nuvemshop-carrinho-abandonado-zap", "name": "Nuvemshop / WooCommerce Carrinho Abandonado → Recuperação Humanizada no WhatsApp c/ Cupom", "price_b2b2b": "R$ 297 a R$ 997/mês (White-Label)", "workflow_file": "workflows/n8n-nuvemshop-carrinho-abandonado-zap.json"}, {"id": "06", "slug": "n8n-receitaws-brasilapi-enriquecedor-crm", "name": "Enriquecedor B2B de CNPJ (BrasilAPI + QSA + Simples) → RD Station / Pipedrive / HubSpot", "price_b2b2b": "R$ 297 a R$ 997/mês (White-Label)", "workflow_file": "workflows/n8n-receitaws-brasilapi-enriquecedor-crm.json"}, {"id": "07", "slug": "n8n-kiwify-hotmart-boasvindas-nfse", "name": "Kiwify / Hotmart Venda Aprovada → Boas-Vindas no WhatsApp + Emissão Automática de NFS-e", "price_b2b2b": "R$ 297 a R$ 997/mês (White-Label)", "workflow_file": "workflows/n8n-kiwify-hotmart-boasvindas-nfse.json"}, {"id": "08", "slug": "n8n-agendamento-clinica-sinal-pix", "name": "Bot de Agendamento para Clínicas/Estética → Cobrança de Sinal 30% PIX + Lembrete 24h Antes", "price_b2b2b": "R$ 297 a R$ 997/mês (White-Label)", "workflow_file": "workflows/n8n-agendamento-clinica-sinal-pix.json"}, {"id": "09", "slug": "n8n-pncp-radar-licitacoes-whatsapp", "name": "Monitor Diário de Editais e Pregões (API Oficial PNCP Gov.br) → Alerta no WhatsApp por CNAE", "price_b2b2b": "R$ 297 a R$ 997/mês (White-Label)", "workflow_file": "workflows/n8n-pncp-radar-licitacoes-whatsapp.json"}, {"id": "10", "slug": "n8n-fechamento-caixa-dre-9router", "name": "Fechamento de Caixa por Áudio no WhatsApp (STT + 9Router AI) → Planilha DRE & Resumo PDF", "price_b2b2b": "R$ 297 a R$ 997/mês (White-Label)", "workflow_file": "workflows/n8n-fechamento-caixa-dre-9router.json"}, {"id": "11", "slug": "n8n-ml-shopee-conciliador-repasses", "name": "Auditor Diário de Repasses Mercado Livre & Shopee → Alerta de Divergência de Taxa/Frete", "price_b2b2b": "R$ 297 a R$ 997/mês (White-Label)", "workflow_file": "workflows/n8n-ml-shopee-conciliador-repasses.json"}, {"id": "12", "slug": "n8n-contrato-zapsign-clicksign-pix", "name": "Gerador de Contrato Prestação de Serviços → Assinatura Digital + Liberação após 1º PIX", "price_b2b2b": "R$ 297 a R$ 997/mês (White-Label)", "workflow_file": "workflows/n8n-contrato-zapsign-clicksign-pix.json"}, {"id": "13", "slug": "n8n-google-maps-prospeccao-b2b-ddd55", "name": "Extrator de Leads Locais B2B por Cidade/Nicho → Validação de Número WhatsApp (+55) & CRM", "price_b2b2b": "R$ 297 a R$ 997/mês (White-Label)", "workflow_file": "workflows/n8n-google-maps-prospeccao-b2b-ddd55.json"}, {"id": "14", "slug": "n8n-ifood-auditor-avaliacoes-nps", "name": "Monitor de Avaliações e NPS (iFood / Google Meu Negócio) → Resposta IA & Cupom de Retenção", "price_b2b2b": "R$ 297 a R$ 997/mês (White-Label)", "workflow_file": "workflows/n8n-ifood-auditor-avaliacoes-nps.json"}, {"id": "15", "slug": "n8n-contabilidade-alerta-das-fgts-dctf", "name": "Robô para Escritórios Contábeis: Disparo Mensal de Guias DAS/FGTS/DARF no WhatsApp c/ Protocolo", "price_b2b2b": "R$ 297 a R$ 997/mês (White-Label)", "workflow_file": "workflows/n8n-contabilidade-alerta-das-fgts-dctf.json"}]
+    };
+
+    let currentZapApp = DATA.p1[0];
+
+    function crc16CCITT(str) {
+      let crc = 0xFFFF;
+      for (let i = 0; i < str.length; i++) {
+        crc ^= str.charCodeAt(i) << 8;
+        for (let j = 0; j < 8; j++) {
+          if ((crc & 0x8000) !== 0) crc = ((crc << 1) ^ 0x1021) & 0xFFFF;
+          else crc = (crc << 1) & 0xFFFF;
+        }
+      }
+      return crc.toString(16).toUpperCase().padStart(4, '0');
+    }
+
+    function emv(id, val) {
+      const s = String(val);
+      return id + String(s.length).padStart(2, '0') + s;
+    }
+
+    function generatePixBrCode(pixKey, merchantName, city, amount, txid = 'ZAPPRO01') {
+      const gui = emv('00', 'br.gov.bcb.pix') + emv('01', pixKey.trim());
+      const mai = emv('26', gui);
+      const amt = amount > 0 ? emv('54', Number(amount).toFixed(2)) : '';
+      const addData = emv('62', emv('05', txid.slice(0, 25)));
+      const payload = emv('00', '01') + mai + emv('52', '0000') + emv('53', '986') + amt +
+                      emv('58', 'BR') + emv('59', merchantName.slice(0, 25).toUpperCase()) +
+                      emv('60', city.slice(0, 15).toUpperCase()) + addData + '6304';
+      return payload + crc16CCITT(payload);
+    }
+
+    function initZapList() {
+      const list = document.getElementById('zapAppList');
+      list.innerHTML = '';
+      DATA.p1.forEach((app, idx) => {
+        const div = document.createElement('div');
+        div.className = 'app-item' + (idx === 0 ? ' active' : '');
+        div.innerHTML = `
+          <div class="t"><span>${app.id}. ${app.name}</span><span class="cmd">${app.trigger}</span></div>
+          <div class="s">${app.pain_solved.slice(0, 95)}...</div>
+        `;
+        div.onclick = () => {
+          document.querySelectorAll('.app-item').forEach(el => el.classList.remove('active'));
+          div.classList.add('active');
+          selectZapApp(app);
+        };
+        list.appendChild(div);
+      });
+      selectZapApp(DATA.p1[0]);
+    }
+
+    function selectZapApp(app) {
+      currentZapApp = app;
+      document.getElementById('activeZapTitle').textContent = `${app.name} (${app.trigger})`;
+      document.getElementById('chatInputBox').value = `${app.trigger} ${app.sample_input}`;
+      document.getElementById('chatWindow').innerHTML = '';
+      sendZapMessage();
+    }
+
+    function sendZapMessage() {
+      const box = document.getElementById('chatInputBox');
+      const raw = box.value.trim();
+      if (!raw) return;
+
+      const chat = document.getElementById('chatWindow');
+      const uBubble = document.createElement('div');
+      uBubble.className = 'bubble user';
+      uBubble.textContent = raw;
+      chat.appendChild(uBubble);
+
+      const brand = document.getElementById('wlName').value || 'Ricardo Vieira Forge Cloud';
+      const pixKey = document.getElementById('wlPix').value || '12.345.678/0001-90';
+      const city = document.getElementById('wlCity').value || 'SAO PAULO';
+
+      const clean = raw.replace(/^\/[a-zA-Z0-9_-]+\s*/, '');
+      const parts = clean.split('|').map(s => s.trim());
+      const nums = (clean.match(/\d+(?:[.,]\d+)?/g) || []).map(n => parseFloat(n.replace(',', '.')));
+      const mainAmount = nums.find(n => n >= 20 && n < 5000000) || 450.00;
+      const brcode = generatePixBrCode(pixKey, brand, city, mainAmount, 'BRZAP' + currentZapApp.id);
+      const protocol = 'BR-' + currentZapApp.id + '-' + Math.floor(100000 + Math.random() * 900000);
+
+      const botReply = [
+        `✅ *${currentZapApp.name}*`,
+        `🏢 *Emitido por:* ${brand}`,
+        `📌 *Protocolo:* #${protocol}`,
+        `────────────────────────`,
+        ...parts.map((p, i) => `• ${p}`),
+        `────────────────────────`,
+        `💰 *Valor Calculado:* R$ ${mainAmount.toLocaleString('pt-BR', {minimumFractionDigits: 2, maximumFractionDigits: 2})}`,
+        `🔐 *PIX Copia-e-Cola (BRCode BCB):*`,
+        `${brcode}`,
+        ``,
+        `📄 *PDF Timbrado atualizado no painel ao lado!*`
+      ].join('\n');
+
+      const bBubble = document.createElement('div');
+      bBubble.className = 'bubble bot';
+      bBubble.textContent = botReply;
+      chat.appendChild(bBubble);
+      chat.scrollTop = chat.scrollHeight;
+
+      // Render PDF preview
+      document.getElementById('pdfPreview').innerHTML = `
+        <div class="pdf-hdr">
+          <div>
+            <div style="font-size:16px;font-weight:800;color:#065f46;">${brand}</div>
+            <div style="font-size:11px;color:#475569;">${currentZapApp.name} •Categoria: ${currentZapApp.category}</div>
+          </div>
+          <div style="text-align:right;">
+            <div style="font-weight:700;color:#0f172a;">PROTOCOLO #${protocol}</div>
+            <div style="font-size:10px;color:#64748b;">Data: ${new Date().toLocaleDateString('pt-BR')}</div>
+          </div>
+        </div>
+        <div style="margin-bottom:12px;">
+          <strong style="color:#0f172a;display:block;margin-bottom:6px;">DETALHAMENTO TÉCNICO / FINANCEIRO:</strong>
+          <table style="width:100%;border-collapse:collapse;font-size:11px;">
+            ${parts.map((p, i) => `<tr style="border-bottom:1px solid #e2e8f0;"><td style="padding:6px 4px;font-weight:600;color:#334155;">Item ${i+1}</td><td style="padding:6px 4px;color:#0f172a;">${p}</td></tr>`).join('')}
+          </table>
+        </div>
+        <div style="background:#f8fafc;border:1px solid #cbd5e1;border-radius:8px;padding:10px;display:flex;justify-content:space-between;align-items:center;">
+          <span style="font-weight:700;color:#334155;">VALOR TOTAL / BASE LÍQUIDA:</span>
+          <span style="font-size:16px;font-weight:800;color:#059669;">R$ ${mainAmount.toLocaleString('pt-BR', {minimumFractionDigits: 2, maximumFractionDigits: 2})}</span>
+        </div>
+        <div class="pix-box">
+          <strong>🔐 PIX COPIA E COLA OFICIAL (EMVCo / Banco Central do Brasil - Chave: ${pixKey}):</strong><br><br>
+          ${brcode}
+        </div>
+        <div style="margin-top:14px;font-size:10px;color:#64748b;border-top:1px solid #e2e8f0;padding-top:8px;">
+          Documento gerado via WhatsApp-First Engine • Conformidade LGPD (Lei 13.709/2018) & Código Civil Brasileiro.
+        </div>
+      `;
+    }
+
+    function applyWhiteLabel() {
+      const brand = document.getElementById('wlName').value || 'Ricardo Vieira Forge Cloud';
+      document.getElementById('brandHeadline').textContent = `${brand} • Central de 75 Micro-Sistemas B2B Brasil`;
+      sendZapMessage();
+    }
+
+    function renderTab(key, btn) {
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      if (btn) btn.classList.add('active');
+      const grid = document.getElementById('catalogGrid');
+      const items = DATA[key] || [];
+      grid.innerHTML = items.map(it => `
+        <div class="card">
+          <div>
+            <div style="font-size:11px;color:#34d399;font-weight:700;margin-bottom:4px;">#${it.id} • ${it.slug}</div>
+            <h3>${it.name}</h3>
+            <p>${it.pain_solved || it.description || it.seo_keyword || 'Workflow completo pronto para importação n8n + Evolution API + Asaas.'}</p>
+          </div>
+          <div class="card-meta">
+            <span class="price-pill">${it.price_brl || it.price_b2b2b}</span>
+            <span style="color:#94a3b8;">📦 ${it.zip || it.path || it.workflow_file || ('dist/' + it.slug + '.zip')}</span>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    initZapList();
+    renderTab('p1');
+  </script>
+</body>
+</html>

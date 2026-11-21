@@ -1,0 +1,20 @@
+{
+  "name": "@brasil-b2b/cobrazap-pix-regua",
+  "version": "1.0.0",
+  "description": "CobraZap PIX EMV & Régua Anti-Calote — Constrangimento ao cobrar clientes inadimplentes no WhatsApp. Gera o código PIX Copia-e-Cola com multa/juros (2% + 1% a.m.) e a régua completa de 4 mensagens amigáveis dentro da lei (Art. 42 CDC).",
+  "main": "worker.js",
+  "type": "module",
+  "scripts": {
+    "start": "wrangler dev worker.js",
+    "deploy": "wrangler deploy worker.js"
+  },
+  "keywords": [
+    "whatsapp-first",
+    "brasil",
+    "pix",
+    "b2b",
+    "cobrazap-pix-regua"
+  ],
+  "author": "Ricardo Vieira Forge Cloud (souza@usa.com)",
+  "license": "Commercial"
+}

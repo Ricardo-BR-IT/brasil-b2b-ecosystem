@@ -1,0 +1,8 @@
+name = "precificazap-ifood-markup"
+main = "worker.js"
+compatibility_date = "2026-01-01"
+
+[vars]
+APP_NAME = "PrecificaZap Ficha Técnica, CMV, Taxa iFood & Maquininha"
+TRIGGER_COMMAND = "/preco"
+PRICE_TIER = "R$ 49,90/mês"

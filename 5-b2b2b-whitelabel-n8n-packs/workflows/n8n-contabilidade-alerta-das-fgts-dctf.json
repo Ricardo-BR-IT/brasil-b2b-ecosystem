@@ -1,0 +1,87 @@
+{
+  "name": "[BR-B2B #15] Robô para Escritórios Contábeis: Disparo Mensal de Guias DAS/FGTS/DARF no WhatsApp c/ Protocolo",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "n8n-contabilidade-alerta-das-fgts-dctf",
+        "responseMode": "lastNode"
+      },
+      "id": "webhook-15",
+      "name": "Evolution API / Webhook Trigger",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        240,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Motor B2B Brasil: Robô para Escritórios Contábeis: Disparo Mensal de Guias DAS/FGTS/DARF no WhatsApp c/ Protocolo\nconst body = $input.first().json;\nreturn [{ json: { workflow: 'n8n-contabilidade-alerta-das-fgts-dctf', title: \"Robô para Escritórios Contábeis: Disparo Mensal de Guias DAS/FGTS/DARF no WhatsApp c/ Protocolo\", status: 'PROCESSED_OK', timestamp: new Date().toISOString(), payload: body } }];"
+      },
+      "id": "code-15",
+      "name": "Motor Fiscal & PIX BRCode Processor",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        500,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{$env.EVOLUTION_API_URL}}/message/sendText/={{$env.EVOLUTION_INSTANCE}}",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "apikey",
+              "value": "={{$env.EVOLUTION_API_KEY}}"
+            }
+          ]
+        }
+      },
+      "id": "evo-15",
+      "name": "Enviar Resposta / PDF no WhatsApp",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [
+        780,
+        300
+      ]
+    }
+  ],
+  "connections": {
+    "Evolution API / Webhook Trigger": {
+      "main": [
+        [
+          {
+            "node": "Motor Fiscal & PIX BRCode Processor",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Motor Fiscal & PIX BRCode Processor": {
+      "main": [
+        [
+          {
+            "node": "Enviar Resposta / PDF no WhatsApp",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "meta": {
+    "author": "Ricardo Vieira Forge Cloud",
+    "license": "White-Label B2B2B Commercial (R$ 297 - R$ 997/mês)"
+  }
+}

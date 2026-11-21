@@ -1,0 +1,111 @@
+{
+  "pillar": "5-b2b2b-whitelabel-n8n-packs",
+  "total_workflows": 15,
+  "workflows": [
+    {
+      "id": "01",
+      "slug": "n8n-evolution-orcamento-pdf-pix",
+      "name": "WhatsApp (Evolution API) → Orçamento PDF Timbrado + Cobrança PIX Asaas",
+      "price_b2b2b": "R$ 297 a R$ 997/mês (White-Label)",
+      "workflow_file": "workflows/n8n-evolution-orcamento-pdf-pix.json"
+    },
+    {
+      "id": "02",
+      "slug": "n8n-asaas-regua-cobranca-whatsapp",
+      "name": "Régua Anti-Inadimplência Asaas (D-2, Dia D, D+3, D+7) → WhatsApp c/ PIX Copia-e-Cola",
+      "price_b2b2b": "R$ 297 a R$ 997/mês (White-Label)",
+      "workflow_file": "workflows/n8n-asaas-regua-cobranca-whatsapp.json"
+    },
+    {
+      "id": "03",
+      "slug": "n8n-bling-nfe-whatsapp-rastreio",
+      "name": "Bling ERP NF-e Emitida → Envio Automático do PDF DANFE + Link Rastreio no WhatsApp",
+      "price_b2b2b": "R$ 297 a R$ 997/mês (White-Label)",
+      "workflow_file": "workflows/n8n-bling-nfe-whatsapp-rastreio.json"
+    },
+    {
+      "id": "04",
+      "slug": "n8n-xml-nfe-contabilidade-gdrive",
+      "name": "Coletor de XML NF-e via WhatsApp/E-mail → Validação Fiscal + Pasta do Contador no Drive",
+      "price_b2b2b": "R$ 297 a R$ 997/mês (White-Label)",
+      "workflow_file": "workflows/n8n-xml-nfe-contabilidade-gdrive.json"
+    },
+    {
+      "id": "05",
+      "slug": "n8n-nuvemshop-carrinho-abandonado-zap",
+      "name": "Nuvemshop / WooCommerce Carrinho Abandonado → Recuperação Humanizada no WhatsApp c/ Cupom",
+      "price_b2b2b": "R$ 297 a R$ 997/mês (White-Label)",
+      "workflow_file": "workflows/n8n-nuvemshop-carrinho-abandonado-zap.json"
+    },
+    {
+      "id": "06",
+      "slug": "n8n-receitaws-brasilapi-enriquecedor-crm",
+      "name": "Enriquecedor B2B de CNPJ (BrasilAPI + QSA + Simples) → RD Station / Pipedrive / HubSpot",
+      "price_b2b2b": "R$ 297 a R$ 997/mês (White-Label)",
+      "workflow_file": "workflows/n8n-receitaws-brasilapi-enriquecedor-crm.json"
+    },
+    {
+      "id": "07",
+      "slug": "n8n-kiwify-hotmart-boasvindas-nfse",
+      "name": "Kiwify / Hotmart Venda Aprovada → Boas-Vindas no WhatsApp + Emissão Automática de NFS-e",
+      "price_b2b2b": "R$ 297 a R$ 997/mês (White-Label)",
+      "workflow_file": "workflows/n8n-kiwify-hotmart-boasvindas-nfse.json"
+    },
+    {
+      "id": "08",
+      "slug": "n8n-agendamento-clinica-sinal-pix",
+      "name": "Bot de Agendamento para Clínicas/Estética → Cobrança de Sinal 30% PIX + Lembrete 24h Antes",
+      "price_b2b2b": "R$ 297 a R$ 997/mês (White-Label)",
+      "workflow_file": "workflows/n8n-agendamento-clinica-sinal-pix.json"
+    },
+    {
+      "id": "09",
+      "slug": "n8n-pncp-radar-licitacoes-whatsapp",
+      "name": "Monitor Diário de Editais e Pregões (API Oficial PNCP Gov.br) → Alerta no WhatsApp por CNAE",
+      "price_b2b2b": "R$ 297 a R$ 997/mês (White-Label)",
+      "workflow_file": "workflows/n8n-pncp-radar-licitacoes-whatsapp.json"
+    },
+    {
+      "id": "10",
+      "slug": "n8n-fechamento-caixa-dre-9router",
+      "name": "Fechamento de Caixa por Áudio no WhatsApp (STT + 9Router AI) → Planilha DRE & Resumo PDF",
+      "price_b2b2b": "R$ 297 a R$ 997/mês (White-Label)",
+      "workflow_file": "workflows/n8n-fechamento-caixa-dre-9router.json"
+    },
+    {
+      "id": "11",
+      "slug": "n8n-ml-shopee-conciliador-repasses",
+      "name": "Auditor Diário de Repasses Mercado Livre & Shopee → Alerta de Divergência de Taxa/Frete",
+      "price_b2b2b": "R$ 297 a R$ 997/mês (White-Label)",
+      "workflow_file": "workflows/n8n-ml-shopee-conciliador-repasses.json"
+    },
+    {
+      "id": "12",
+      "slug": "n8n-contrato-zapsign-clicksign-pix",
+      "name": "Gerador de Contrato Prestação de Serviços → Assinatura Digital + Liberação após 1º PIX",
+      "price_b2b2b": "R$ 297 a R$ 997/mês (White-Label)",
+      "workflow_file": "workflows/n8n-contrato-zapsign-clicksign-pix.json"
+    },
+    {
+      "id": "13",
+      "slug": "n8n-google-maps-prospeccao-b2b-ddd55",
+      "name": "Extrator de Leads Locais B2B por Cidade/Nicho → Validação de Número WhatsApp (+55) & CRM",
+      "price_b2b2b": "R$ 297 a R$ 997/mês (White-Label)",
+      "workflow_file": "workflows/n8n-google-maps-prospeccao-b2b-ddd55.json"
+    },
+    {
+      "id": "14",
+      "slug": "n8n-ifood-auditor-avaliacoes-nps",
+      "name": "Monitor de Avaliações e NPS (iFood / Google Meu Negócio) → Resposta IA & Cupom de Retenção",
+      "price_b2b2b": "R$ 297 a R$ 997/mês (White-Label)",
+      "workflow_file": "workflows/n8n-ifood-auditor-avaliacoes-nps.json"
+    },
+    {
+      "id": "15",
+      "slug": "n8n-contabilidade-alerta-das-fgts-dctf",
+      "name": "Robô para Escritórios Contábeis: Disparo Mensal de Guias DAS/FGTS/DARF no WhatsApp c/ Protocolo",
+      "price_b2b2b": "R$ 297 a R$ 997/mês (White-Label)",
+      "workflow_file": "workflows/n8n-contabilidade-alerta-das-fgts-dctf.json"
+    }
+  ]
+}

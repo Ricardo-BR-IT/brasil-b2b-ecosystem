@@ -1,0 +1,20 @@
+{
+  "name": "@brasil-b2b/vistoriazap-laudo-os",
+  "version": "1.0.0",
+  "description": "VistoriaZap Laudo Técnico & Ordem de Serviço PDF — Vistorias feitas no papel ou perdidas em mensagens soltas. O técnico preenche o checklist no chat e gera um Laudo/OS oficial numerado com hash SHA-256 de integridade jurídica e garantia.",
+  "main": "worker.js",
+  "type": "module",
+  "scripts": {
+    "start": "wrangler dev worker.js",
+    "deploy": "wrangler deploy worker.js"
+  },
+  "keywords": [
+    "whatsapp-first",
+    "brasil",
+    "pix",
+    "b2b",
+    "vistoriazap-laudo-os"
+  ],
+  "author": "Ricardo Vieira Forge Cloud (souza@usa.com)",
+  "license": "Commercial"
+}

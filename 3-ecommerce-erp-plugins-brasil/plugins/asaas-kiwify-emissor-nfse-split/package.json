@@ -1,0 +1,9 @@
+{
+  "name": "@brasil-ecom-erp/asaas-kiwify-emissor-nfse-split",
+  "version": "1.0.0",
+  "description": "Divide automaticamente a emissão de NF-e (e-book/livro imune de imposto) e NFS-e (mentoria/curso) após pagamento aprovado.",
+  "main": "index.js",
+  "ecosystem": "Infoprodutos & SaaS BR",
+  "priceBRL": "R$ 79,90/mês",
+  "author": "Ricardo Vieira Forge Cloud"
+}

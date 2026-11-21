@@ -1,0 +1,9 @@
+{
+  "name": "@brasil-ecom-erp/ifood-anotaai-sincronizador-estoque-erp",
+  "version": "1.0.0",
+  "description": "Dá baixa automática de insumos no ERP a cada pedido concluído no delivery e pausa o item no cardápio se o estoque zerar.",
+  "main": "index.js",
+  "ecosystem": "Food Service & ERP BR",
+  "priceBRL": "R$ 69,90/mês",
+  "author": "Ricardo Vieira Forge Cloud"
+}

@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Gerador PIX Copia-e-Cola (BRCode BCB) & Cobra",
+  "short_name": "Gerador PIX ",
+  "version": "1.0.0",
+  "description": "Gera código PIX EMV oficial do Banco Central com valor exato, TXID, CRC16 e link direto para WhatsApp.",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "clipboardWrite"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Gerador PIX Copia-e-Cola (BRCode BCB) & Cobrança 1-Click",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}

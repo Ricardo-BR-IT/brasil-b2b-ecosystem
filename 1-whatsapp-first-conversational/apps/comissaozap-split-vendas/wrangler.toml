@@ -1,0 +1,8 @@
+name = "comissaozap-split-vendas"
+main = "worker.js"
+compatibility_date = "2026-01-01"
+
+[vars]
+APP_NAME = "ComissãoZap Split de Vendedores, Metas & Desconto MDR"
+TRIGGER_COMMAND = "/comissao"
+PRICE_TIER = "R$ 49,90/mês"

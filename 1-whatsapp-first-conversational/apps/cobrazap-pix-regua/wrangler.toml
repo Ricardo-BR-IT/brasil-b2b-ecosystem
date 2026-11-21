@@ -1,0 +1,8 @@
+name = "cobrazap-pix-regua"
+main = "worker.js"
+compatibility_date = "2026-01-01"
+
+[vars]
+APP_NAME = "CobraZap PIX EMV & Régua Anti-Calote"
+TRIGGER_COMMAND = "/cobrar"
+PRICE_TIER = "R$ 49,90/mês"

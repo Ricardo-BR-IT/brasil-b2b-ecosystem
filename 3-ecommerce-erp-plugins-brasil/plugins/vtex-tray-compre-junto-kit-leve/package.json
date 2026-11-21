@@ -1,0 +1,9 @@
+{
+  "name": "@brasil-ecom-erp/vtex-tray-compre-junto-kit-leve",
+  "version": "1.0.0",
+  "description": "Aumenta o Ticket Médio (AOV) em 18% montando kits com desconto progressivo sem prejudicar o Core Web Vitals da loja.",
+  "main": "index.js",
+  "ecosystem": "VTEX / Tray App Store",
+  "priceBRL": "R$ 69,90/mês",
+  "author": "Ricardo Vieira Forge Cloud"
+}
