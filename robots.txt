@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ricardo-br-it.github.io/brasil-b2b-ecosystem/sitemap.xml
